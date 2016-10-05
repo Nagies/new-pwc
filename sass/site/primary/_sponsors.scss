@@ -1,0 +1,42 @@
+#sponsors-page {
+	h1 {
+		font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+   }
+
+  p {
+    color: $dark;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+	#section-1 {
+		height: 250px;
+		background: $blue;
+		position: relative;
+
+		.text-wrapper {
+			position: absolute; 
+			bottom: 25px;
+			text-align: center;
+			width: 100%;
+
+			span {
+				font-size: 15px;
+			}
+
+			.contact {
+				text-decoration: none;
+				color: $red;
+			}
+		}
+	}
+
+	#section-2 {
+		height: 400px;
+	}
+}

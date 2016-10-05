@@ -1,0 +1,126 @@
+.site-footer {
+	background: #32373C;
+	height: 225px;
+
+	.site-info {
+		overflow: hidden;
+
+		.left-foot {
+			width: 50%;
+			float: left;
+
+			.inner-l {
+				width: 50%;
+				float: left;
+				padding-left: 2rem;
+				padding-top: 2rem;
+
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+
+				p {
+					color: white;
+					padding: 0 0 0 20px;
+					margin: 0;
+
+					&.inline {
+						display: inline;
+						padding: 0;
+					}
+				}
+
+				span {
+					color: $red;
+					display: inline;
+				}
+			}
+
+			.inner-r {
+				width: 50%;
+				float: right;
+				padding-top: 2rem;
+
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+
+				.routes {
+					color: white;
+					text-decoration: none;
+					display: block;
+					margin-bottom: 7px;
+
+					&:after {
+						content: "";
+						display: table;
+						clear: both;
+					}
+				}
+
+				a {
+					text-decoration: none;
+					color: inherit;
+
+					span {
+						color: white;
+						margin-right: 10px;
+						transition: color 0.4s ease;
+						font-size: 18px;
+
+						&:hover {
+							color: $red;
+						}
+					}
+				}
+			}
+
+		}
+
+		.right-foot {
+			width: 50%;
+			float: right;
+			padding-right: 10rem;
+			padding-top: 4rem;
+			overflow: hidden;
+
+			a {
+				height: 100%;
+				width: 100%;
+			}
+			
+			h1 {
+				float: right;
+				color: white;
+			}
+			// #logo {
+			// 	float: right;
+			// }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

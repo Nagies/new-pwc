@@ -1,0 +1,115 @@
+#membership-page {
+
+	h1 {
+		font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+   }
+
+  p {
+    color: $dark;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+	#section-1 {
+		height: 250px;
+		background: $blue;
+		position: relative;
+
+		.text-wrapper {
+			position: absolute; 
+			bottom: 25px;
+			text-align: center;
+			width: 100%;
+
+			h3 {
+				color: white;
+				font-size: 16px;
+				font-weight: 400;
+				margin-top: 5px;
+			}
+		}
+	}
+
+	#section-2 {
+		// background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/06/about.jpeg");
+		// background-size: cover; 
+		// background-repeat: no-repeat;
+		// background-position: center center;
+		// position: relative;
+		background: white;
+
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0; 
+		// 	left: 0;
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	background: rgba(232, 90, 113, 0.5);
+		// }
+
+		.center-wrapper {
+			max-width: 1000px;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 3rem 0;
+
+			.membership-wrapper {
+				float: left;
+				width: 50%;
+				height: 400px;
+				text-align: center;
+				padding: 20px;
+				
+				.membership {
+					box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+					border-radius: 2px;
+					height: 100%;
+					width: 100%;
+					background: $dark;
+					position: relative; 
+					z-index: 100;
+					padding: 20px;
+
+					h1 {
+						color: white;
+						margin-top: 5rem;
+						margin-bottom: 3rem;
+					}
+
+					.buttons {
+						width: 100%;
+						text-align: center;
+
+						.button {
+							background: transparent;
+							padding: 12px 40px;
+							outline: none;
+							border: 1px solid white;
+							border-radius: 20px;
+							color: white;
+							font-size: 14px;
+							box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+							margin: 0 5px;
+							text-decoration: none;
+							cursor: pointer;
+
+							&.fill {
+								background: $red;
+								border: $red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

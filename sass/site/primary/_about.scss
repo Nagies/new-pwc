@@ -1,0 +1,135 @@
+#about-page {
+  body {
+    background-color: blue;
+  }
+
+	h1 {
+		font-size: 22px;
+    font-weight: 500;
+    color: $dark;
+   }
+
+  p {
+    color: $dark;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+	#section-1 {
+		height: 500px;
+		background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1452215199360-c16ba37005fe.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+
+		.text-wrapper {
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 50%;
+			height: 20%;
+
+			h1 {
+				text-align: center;
+				color: white;
+				font-size: 34px;
+			}
+		}
+	}
+
+	#section-2 {
+		max-width: 1050px;
+		margin: 5rem auto;
+		text-align: center;
+		overflow: hidden;
+
+		.side-menu {
+			float: left;
+			max-width: 500px;
+			text-align: left;
+
+			.side_menu_class {
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+
+						a {
+							text-decoration: none;
+							color: $dark;
+							font-weight: 300;
+							padding: 0;
+							margin: 5px 0;
+							font-size: 20px;
+
+							&.active {
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+
+			h1 {
+				color: $blue;
+				font-weight: 400;
+				font-size: 20px;
+			}		
+		}
+
+		.text-wrapper {
+			width: 800px;
+			margin: 0 auto;
+			float: right;
+			text-align: left;
+			overflow: hidden;
+
+			p {
+				margin-bottom: 30px;
+			}
+
+			h1 {
+				font-weight: 400;
+				font-size: 20px;
+			}
+
+			.sponsors {
+				display: block;
+				text-decoration: none;
+				color: $dark;
+				padding: 5px 0;
+			}
+
+			.contact {
+				float: left;
+				width: 50%;
+				height: 300px;
+				padding: 1rem 0;
+
+				h1 {
+					margin: 5px 0;
+				}
+
+				p {
+					padding: 0;
+					margin: 0;
+					font-size: 16px;
+				}
+
+			}
+		}
+
+		.divider {
+			border: 1px solid $dark;
+			width: 5rem;
+			margin: 50px auto;
+		}
+	}
+}

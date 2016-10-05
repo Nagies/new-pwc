@@ -1,0 +1,13 @@
+{
+  "name": "liza-blog",
+  "version": "1.0.0",
+  "description": "My personal site's blog at codes.lizaramo.com",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.1.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "jquery-validation": "^1.14.0"
+  }
+}

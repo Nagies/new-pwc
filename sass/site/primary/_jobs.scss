@@ -1,0 +1,194 @@
+#jobs-page {
+	
+	h1 {
+		font-size: 22px;
+    font-weight: 500;
+    color: $dark;
+   }
+
+  p {
+    color: $dark;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+	#section-1 {
+		height: 500px;
+		background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1452215199360-c16ba37005fe.jpeg");
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+
+		.text-wrapper {
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 50%;
+			height: 20%;
+
+			h1 {
+				text-align: center;
+				color: white;
+				font-size: 34px;
+			}
+		}
+	}
+
+	#section-2 {
+		width: 100%;
+		margin: 0 auto;
+
+		&.fill {
+			height: auto;
+			padding: 3rem 0;
+		}
+
+		&.full {
+			height: 500px;
+			padding-top: 7rem;
+
+			h1 {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			img {
+				height: 50px;
+				width: 50px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		.back {
+			color: $red;
+			text-align: center;
+			display: block;
+		}
+		
+		.text-wrap {
+			margin: 5rem auto 3rem;
+			max-width: 800px;
+
+			h1 {
+				text-align: center;
+			}
+
+			p {
+		    padding: 5px 0;
+		    margin: 0;
+		    line-height: 24px;
+			}
+
+			a {
+				color: $red;
+				text-decoration: none;
+			}
+		}
+
+		.job-wrap {
+			max-width: 800px;
+			margin: 3rem auto;
+
+			h3 {
+				margin-bottom: 10px;
+				padding: 0;
+
+				a {
+					text-decoration: none;
+					color: $blue;
+				}
+			}
+
+			p {
+				line-height: 24px;
+				padding: 5px 0;
+				margin: 0;
+			}
+		}
+	}
+	
+
+
+
+	#section-1-show {
+		height: 150px;
+		background: $blue;
+	}
+
+
+	#job-forms {
+		max-width: 600px;
+		margin: 0 auto;
+		padding-top: 3rem;
+
+		h3 {
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			padding-bottom: 5px;
+		}
+
+		input {
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 5px 10px;
+		}
+
+		.checkbox-wrapper {
+			float: left;
+			width: 25%;
+
+			&:after {
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+
+		.submit {
+			background: $red;
+			color: white;
+			display: block;
+			margin: 1rem auto 3rem;
+			outline: none;
+			border: 0;
+			box-shadow: none;
+			line-height: normal;
+			padding: 12px 45px;
+			border-radius: 2px;
+			margin: 1rem auto 3rem;
+			text-shadow: none;
+			font-size: 16px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
