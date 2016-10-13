@@ -1860,6 +1860,11 @@ a:hover, a:active {
   line-height: 24px;
   font-size: 16px;
 }
+#events-page #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container .event-description a {
+  text-decoration: underline;
+  font-weight: 600;
+  display: inline;
+}
 #events-page #events-tabs-section #tabs .event-wrapper .text-wrapper h3 {
   text-decoration: none;
   font-weight: 600;
