@@ -1801,6 +1801,9 @@ a:hover, a:active {
   width: 35%;
   height: 100%;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #events-page #events-tabs-section #tabs .event-wrapper .image-wrapper:after {
   content: "";

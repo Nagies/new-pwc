@@ -196,7 +196,7 @@ get_header(); ?>
 									<?php $bg_img_url = $stockImgArr[$randomIndex]; ?>
 								<?php } ?>
 
-								<div class="image-wrapper" style="background-image: url('<?php echo $bg_img_url; ?>'); background-size: cover;">
+								<div class="image-wrapper" style="background-image: url('<?php echo $bg_img_url; ?>');">
 									<!-- event date: -->
 				          <?php if ($eventDate) { ?>
 				            <p class="event-date">
