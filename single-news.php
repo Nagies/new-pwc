@@ -9,10 +9,9 @@
 
 get_header(); ?>
 
-<h3>*Reading from: single-news.php*</h3>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div id="events-page">
+			<div id="news-page">
 			<section id="section-1-show">
 
 			</section>
@@ -37,32 +36,43 @@ get_header(); ?>
 				<?php $newsChapters = wp_get_post_terms( $newsID, 'chapter' ); ?>
 				<?php $newsLink = get_post_permalink( $newsID ); ?>
 
-        <!-- img -->
-        <?php if ($newsPost_img) { ?>
-          <img src=" <?php echo $newsPost_img; ?> " alt="" />
-        <?php } ?>
-
-        <!-- event title: -->
-				<?php if ($newsTitle) { ?>
-					<h3>
-						<?php echo $newsTitle; ?>
-					</h3>
-				<?php } ?>
-
 				<!-- event date: -->
 				<?php if ($newsPostDate) { ?>
-					<p>
-						Posted on
-						<?php echo date('F j, Y', strtotime($newsPostDate)); ?>
-					</p>
+					<div class="date-wrapper">
+						<h3>
+							Posted on
+							<?php echo date('F j, Y', strtotime($newsPostDate)); ?>
+						</h3>
+					</div>
 				<?php } ?>
 
+				<div class="event-show-img-wrapper">
+					<!-- img -->
+	        <?php if ($newsPost_img) { ?>
+	          <img src=" <?php echo $newsPost_img; ?> " alt="" />
+	        <?php } ?>
+				</div>
+
+        <div class="event-show-header">
+
+	        <!-- event title: -->
+					<?php if ($newsTitle) { ?>
+						<h3 class="event-show-title">
+							<?php echo $newsTitle; ?>
+						</h3>
+					<?php } ?>
+
+				</div>
+
+				
+			<div class="news-description">
 				<!-- description: -->
 				<?php if ($newsPostContent) { ?>
-					<p>
+					<p class="description">
 						<?php echo $newsPostContent; ?>
 					</p>
 				<?php } ?>
+			</div>
 
 			<?php endwhile; // End of the loop. ?>
 		</section>

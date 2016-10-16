@@ -226,24 +226,26 @@ get_header(); ?>
 								?>
 
 								<div class="speaker-wrapper">
-									<p>Speaker #<?php echo $counter; ?>: 
-										<span><?php echo $speaker_name; ?></span>
-									</p>
+									<div style="height: 110px;">
+										<p>Speaker #<?php echo $counter; ?>: 
+											<span><?php echo $speaker_name; ?></span>
+										</p>
 
-									<!-- speaker's job title: -->
-									<?php if ($speaker_job_title) { ?>
-										<p>Job Title: <span><?php echo $speaker_job_title; ?></span> </p>
-									<?php } ?>
+										<!-- speaker's job title: -->
+										<?php if ($speaker_job_title) { ?>
+											<p>Job Title: <span><?php echo $speaker_job_title; ?></span> </p>
+										<?php } ?>
 
-									<!-- speaker company: -->
-									<?php if ($speaker_company) { ?>
-										<p>Company: <span><?php echo $speaker_company; ?></span> </p>
-									<?php } ?>
+										<!-- speaker company: -->
+										<?php if ($speaker_company) { ?>
+											<p>Company: <span><?php echo $speaker_company; ?></span> </p>
+										<?php } ?>
 
-									<!-- speaker role: -->
-									<?php if ($speaker_role) { ?>
-										<p>Role: <span> <?php echo $speaker_role; ?></span> </p>
-									<?php } ?>
+										<!-- speaker role: -->
+										<?php if ($speaker_role) { ?>
+											<p>Role: <span> <?php echo $speaker_role; ?></span> </p>
+										<?php } ?>
+									</div>
 
 									<!-- speaker img -->
 									<?php if ($speaker_img_id) { // display provided speaker img ?>
@@ -275,9 +277,9 @@ get_header(); ?>
 	        <h3>
 	          Sponsors
 	         </h3>
-						<p>
+						<!-- <p>
 							<?php // print_r($event_sponsors); ?>
-						</p>
+						</p> -->
 						<?php
 	          foreach ($event_sponsors as $key => $value) {
 
@@ -311,7 +313,7 @@ get_header(); ?>
 							
 							</div>
 
-							<div class="modal-container">
+							<div class="modal-container" style="display: none;">
 								<div class="modal">
 									<span>x</span>
 									<h3>Eddard Stark</h3>

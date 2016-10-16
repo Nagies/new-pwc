@@ -63,19 +63,20 @@ get_header(); ?>
 
                   <!-- Posted date -->
                   <?php if ($formattedNewsPostDate) { ?>
-                    <p>Posted on: <?php echo $formattedNewsPostDate; ?></p>
+                    <p class="date-posted">Posted on: <?php echo $formattedNewsPostDate; ?></p>
                   <?php } ?>
 
                   <!-- Excerpt -->
                   <?php if ($excerpt) { ?>
-                    <div>
+                    <p>
                       <?php echo $excerpt; ?>...
-                    </div>
+                    </p>
                   <?php } ?>
 
                   <!-- post img -->
                   <img src=" <?php echo $newsPost_img; ?> " alt="" />
-                  <br>
+
+                  <div class="divider"></div>
                 </div>
 
 

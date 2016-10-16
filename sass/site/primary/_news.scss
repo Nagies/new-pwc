@@ -8,7 +8,7 @@
   p {
     color: $dark;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
     text-align: left;
   }
 
@@ -20,7 +20,7 @@
 
 	#section-1 {
 		height: 400px;
-		background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1452215199360-c16ba37005fe.jpeg");
+		background-image: url("https://hd.unsplash.com/photo-1453873623425-04e3561289aa");
 		background-size: cover; 
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -66,7 +66,104 @@
 				h3 {
 					margin: 0;
 					padding: 0;
+					color: $blue;
+					font-size: 22px;
 				}
+
+				.date-posted {
+					line-height: normal;
+					padding: 0;
+					margin: 0;
+					font-style: italic;
+					font-weight: 600;
+				}
+
+				.divider {
+					height: 1px;
+					width: 100%;
+					margin: 25px auto 50px;
+					background: #ccc;
+				}
+			}
+		}
+	}
+
+
+	#section-1-show {
+		height: 75px;
+		width: 100%;
+		background: $blue;
+	}
+
+	#section-2-show {
+		max-width: 1100px;
+		width: 100%;
+		margin: 30px auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		overflow: hidden;
+
+		.date-wrapper {
+			width: 100%;
+			text-align: center;
+
+			h3 {
+				margin: 0 0 20px;
+				font-weight: 600;
+				font-size: 18px;
+				font-style: italic;
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.event-show-img-wrapper {
+			width: 100%;
+			height: 550px;
+			position: relative;
+
+			&:after {
+				content: "";
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.50);
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		.event-show-header {
+			width: 100%;
+			margin-top: 25px;
+			margin-bottom: 30px;
+
+			.event-show-title {
+				font-size: 25px;
+				font-weight: 600;
+				font-style: italic;
+				margin: 40px 0 0;
+				text-align: center;
+			}
+		}
+
+		.news-description {
+			-webkit-columns: 300px 2;
+			-moz-columns: 300px 2;
+			columns: 300px 2;
+
+			p {
+				margin: 0;
+				padding: 0 15px;
+				line-height: 28px;
+				text-align: justify;
 			}
 		}
 	}
