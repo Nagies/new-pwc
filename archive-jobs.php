@@ -17,18 +17,17 @@ get_header(); ?>
       <div id="jobs-page">
 
         <section id="section-1">
-          <div class="text-wrapper">
+          <!-- <div class="text-wrapper">
             <h1>
               JOBS
             </h1>
-          </div>
+          </div> -->
         </section>
-
-  			<?php get_sidebar(); ?>
-
 
         <section id="section-2">
           <div class="text-wrap">
+
+            <h1 class="jobs-main-header">Jobs</h1>
 
 
           <!-- query content on page: -->
@@ -43,24 +42,17 @@ get_header(); ?>
 						foreach ($page_objs as $obj ) {
 							$page_content = $obj->post_content;
 							?>
-							<div>
-								<p>
+								<h3 class="jobs-cta-title">
 									<?php echo $page_content ?>
-								</p>
-							</div>
+								</h3>
 							<?php
 						}
 					?>
 
             <!-- "Submit a Job" link: -->
             <p>
-              <a href="<?php echo get_site_url(); ?>/submit-job/">Click here to submit a job/contract >> </a>
+              <a href="<?php echo get_site_url(); ?>/submit-job/", class="jobs-cta">Click here to submit a job/contract >> </a>
             </p>
-          </div>
-
-
-        <div class="job-wrap">
-
 
 
 
@@ -90,21 +82,25 @@ get_header(); ?>
                   $jobCompany             =   get_post_meta( $jobID, 'company_name', true );
                   ?>
 
-                  <h3>
-                    <a href="<?php echo $jobURL ?>"><?php echo $jobTitle; ?></a>
-                  </h3>
 
-                  <?php if ($formattedJobPostDate) { ?>
-                    <p>Posted on: <?php echo $formattedJobPostDate; ?></p>
-                  <?php } ?>
+                  
+                  <div class="job">
+                    <h3>
+                      <a href="<?php echo $jobURL ?>"><?php echo $jobTitle; ?></a>
+                    </h3>
 
-                  <?php if ($jobCompany) { ?>
-                    <p>Company: <?php echo $jobCompany; ?></p>
-                  <?php } ?>
+                    <?php if ($formattedJobPostDate) { ?>
+                      <p>Posted on: <?php echo $formattedJobPostDate; ?></p>
+                    <?php } ?>
 
-                  <?php if ($jobLocation) { ?>
-                    <p>Location: <?php echo $jobLocation; ?></p>
-                  <?php } ?>
+                    <?php if ($jobCompany) { ?>
+                      <p>Company: <?php echo $jobCompany; ?></p>
+                    <?php } ?>
+
+                    <?php if ($jobLocation) { ?>
+                      <p>Location: <?php echo $jobLocation; ?></p>
+                    <?php } ?>
+                  </div>
 
                   <?php
                 } ?>
@@ -117,7 +113,6 @@ get_header(); ?>
               <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
             <?php endif; ?>
-          </div>
 
       </section>
 

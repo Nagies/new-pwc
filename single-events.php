@@ -76,7 +76,6 @@ get_header(); ?>
 						</h3>
 					</div>
 				<?php } ?>
-				
 
 				<div class="event-show-img-wrapper">
 					<?php if ( $event_img_id ) { // if post has an img ?>

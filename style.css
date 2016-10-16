@@ -1302,12 +1302,8 @@ a:hover, a:active {
   text-align: left;
 }
 #jobs-page #section-1 {
-  height: 500px;
-  background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1452215199360-c16ba37005fe.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
+  height: 75px;
+  background: #145268;
 }
 #jobs-page #section-1 .text-wrapper {
   position: absolute;
@@ -1352,37 +1348,45 @@ a:hover, a:active {
   display: block;
 }
 #jobs-page #section-2 .text-wrap {
-  margin: 5rem auto 3rem;
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 50px auto;
 }
-#jobs-page #section-2 .text-wrap h1 {
+#jobs-page #section-2 .text-wrap .jobs-main-header {
   text-align: center;
+  font-size: 22px;
 }
-#jobs-page #section-2 .text-wrap p {
-  padding: 5px 0;
+#jobs-page #section-2 .text-wrap .jobs-cta-title {
+  padding: 0;
   margin: 0;
   line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
 }
-#jobs-page #section-2 .text-wrap a {
+#jobs-page #section-2 .text-wrap .jobs-cta {
   color: #e85a71;
   text-decoration: none;
+  font-size: 16px;
 }
-#jobs-page #section-2 .job-wrap {
-  max-width: 800px;
-  margin: 3rem auto;
+#jobs-page #section-2 .text-wrap .job {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
 }
-#jobs-page #section-2 .job-wrap h3 {
-  margin-bottom: 10px;
+#jobs-page #section-2 .text-wrap .job h3 {
+  margin: 0;
   padding: 0;
+  font-size: 20px;
 }
-#jobs-page #section-2 .job-wrap h3 a {
+#jobs-page #section-2 .text-wrap .job h3 a {
   text-decoration: none;
   color: #145268;
 }
-#jobs-page #section-2 .job-wrap p {
+#jobs-page #section-2 .text-wrap .job p {
   line-height: 24px;
-  padding: 5px 0;
+  padding: 0;
   margin: 0;
+  font-size: 14px;
+  font-weight: 600;
 }
 #jobs-page #section-1-show {
   height: 150px;
