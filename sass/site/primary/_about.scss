@@ -37,7 +37,6 @@
 		}
 
 		.text-wrapper {
-			z-index: 500;
 			position: relative;
 			height: 100%;
 			width: 100%;
@@ -52,6 +51,7 @@
 				text-align: center;
 				color: white;
 				font-size: 34px;
+				z-index: 500;
 			}
 		}
 	}
@@ -79,6 +79,10 @@
 						padding: 0;
 
 						li {
+							&:hover {
+								font-weight: 600;
+								text-decoration: underline;
+							}
 
 							a {
 								text-decoration: none;

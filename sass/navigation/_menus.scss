@@ -220,6 +220,7 @@
 					text-decoration: none; 
 					color: white;
 					transition: color 0.2s ease;
+					cursor: pointer;
 
 					&:hover {
 						color: $red;
