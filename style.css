@@ -1330,13 +1330,21 @@ a:hover, a:active {
 }
 #jobs-page #section-2.full {
   height: 500px;
-  padding-top: 7rem;
+  position: relative;
 }
-#jobs-page #section-2.full h1 {
+#jobs-page #section-2.full .success-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: auto;
+}
+#jobs-page #section-2.full .success-wrapper .success {
   text-align: center;
-  margin-bottom: 30px;
 }
-#jobs-page #section-2.full img {
+#jobs-page #section-2.full .success-wrapper img {
   height: 50px;
   width: 50px;
   display: block;
@@ -1389,36 +1397,42 @@ a:hover, a:active {
   font-weight: 600;
 }
 #jobs-page #section-1-show {
-  height: 150px;
+  height: 75px;
   background: #145268;
 }
-#jobs-page #job-forms {
+#jobs-page #section-2-show {
+  max-width: 1100px;
+  width: 100%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+#jobs-page #section-2-show #job-forms {
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 15px;
 }
-#jobs-page #job-forms h3 {
+#jobs-page #section-2-show #job-forms h3 {
   text-align: center;
 }
-#jobs-page #job-forms label {
+#jobs-page #section-2-show #job-forms label {
   display: block;
   padding-bottom: 5px;
 }
-#jobs-page #job-forms input {
+#jobs-page #section-2-show #job-forms input {
   width: 100%;
   margin-bottom: 15px;
   padding: 5px 10px;
 }
-#jobs-page #job-forms .checkbox-wrapper {
+#jobs-page #section-2-show #job-forms .checkbox-wrapper {
   float: left;
   width: 25%;
 }
-#jobs-page #job-forms .checkbox-wrapper:after {
+#jobs-page #section-2-show #job-forms .checkbox-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
-#jobs-page #job-forms .submit {
+#jobs-page #section-2-show #job-forms .submit {
   background: #e85a71;
   color: white;
   display: block;

@@ -46,18 +46,27 @@
 
 		&.full {
 			height: 500px;
-			padding-top: 7rem;
+			position: relative;
 
-			h1 {
-				text-align: center;
-				margin-bottom: 30px;
-			}
+			.success-wrapper {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				right: 0;
+				width: 100%;
+				margin: auto;
 
-			img {
-				height: 50px;
-				width: 50px;
-				display: block;
-				margin: 0 auto;
+				.success {
+					text-align: center;
+				}
+
+				img {
+					height: 50px;
+					width: 50px;
+					display: block;
+					margin: 0 auto;
+				}
 			}
 		}
 
@@ -121,56 +130,62 @@
 
 
 	#section-1-show {
-		height: 150px;
+		height: 75px;
 		background: $blue;
 	}
 
+	#section-2-show {
+		max-width: 1100px;
+		width: 100%;
+		margin: 50px auto;
+		overflow: hidden;
 
-	#job-forms {
-		max-width: 600px;
-		margin: 0 auto;
-		padding-top: 3rem;
+		#job-forms {
+			max-width: 600px;
+			margin: 0 auto;
+			padding-top: 15px;
 
-		h3 {
-			text-align: center;
-		}
-
-		label {
-			display: block;
-			padding-bottom: 5px;
-		}
-
-		input {
-			width: 100%;
-			margin-bottom: 15px;
-			padding: 5px 10px;
-		}
-
-		.checkbox-wrapper {
-			float: left;
-			width: 25%;
-
-			&:after {
-				content: '';
-				display: table;
-				clear: both;
+			h3 {
+				text-align: center;
 			}
-		}
 
-		.submit {
-			background: $red;
-			color: white;
-			display: block;
-			margin: 1rem auto 3rem;
-			outline: none;
-			border: 0;
-			box-shadow: none;
-			line-height: normal;
-			padding: 12px 45px;
-			border-radius: 2px;
-			margin: 1rem auto 3rem;
-			text-shadow: none;
-			font-size: 16px;
+			label {
+				display: block;
+				padding-bottom: 5px;
+			}
+
+			input {
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 5px 10px;
+			}
+
+			.checkbox-wrapper {
+				float: left;
+				width: 25%;
+
+				&:after {
+					content: '';
+					display: table;
+					clear: both;
+				}
+			}
+
+			.submit {
+				background: $red;
+				color: white;
+				display: block;
+				margin: 1rem auto 3rem;
+				outline: none;
+				border: 0;
+				box-shadow: none;
+				line-height: normal;
+				padding: 12px 45px;
+				border-radius: 2px;
+				margin: 1rem auto 3rem;
+				text-shadow: none;
+				font-size: 16px;
+			}
 		}
 	}
 }

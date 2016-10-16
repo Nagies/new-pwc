@@ -11,8 +11,10 @@
 
 	</section>
 	<section id="section-2", class="full">
-		<h1>Success!</h1>
-		<img src="/pwc/wp-content/themes/underscores/images/checkmark.png" alt="">
+		<div class="success-wrapper">
+			<h1 class="success">SUCCESS!</h1>
+			<img src="/pwc/wp-content/themes/underscores/images/checkmark.png" alt="">
+		</div>
 	</section>
 </div>
 

@@ -71,6 +71,8 @@ if ( $wp_error ) {
 
 			</section>
 
+			<section id="section-2-show">
+
       <!-- query content on page: -->
 			<?php
 				$args = array(
@@ -91,6 +93,7 @@ if ( $wp_error ) {
 						</div>
 					<?php } ?>
 				<?php } ?>
+
 
 	<?php
 	// start loop to get content on jobs form page --> not working
@@ -210,6 +213,7 @@ if ( $wp_error ) {
 			<button type="submit", class="submit">Submit</button>
 
 	  </form>
+	 </section>
 	 </section>
 
 	</main><!-- .site-main -->
