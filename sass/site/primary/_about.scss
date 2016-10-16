@@ -24,6 +24,17 @@
 		background-position: center center;
 		position: relative;
 
+		.overlay {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.10);
+		}
+
 		.text-wrapper {
 			position: absolute;
 			bottom: 0;
@@ -43,7 +54,7 @@
 	}
 
 	#section-2 {
-		max-width: 1050px;
+		max-width: 1150px;
 		margin: 5rem auto;
 		text-align: center;
 		overflow: hidden;
@@ -99,6 +110,212 @@
 				font-weight: 400;
 				font-size: 20px;
 			}
+
+			#events-tabs-section {	
+				padding-bottom: 50px;
+
+				.events-li {
+					list-style: none;
+					text-align: center;
+					font-weight: 600;
+					
+					.events-a {
+						color: black;
+						font-size: 18px;
+						display: inline-block;
+						margin: 30px 0;
+						text-decoration: underline;
+					}
+				}
+
+				#tabs {
+					width: 100%;
+					margin: 20px auto 0;
+					padding: 0;
+					border: none;
+					overflow: hidden;
+					// -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+					// -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+					// box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+					// border: 1px solid #ccc;
+
+					.ui-tabs-nav {
+						margin: 0;
+						padding: 0;
+						border: none;
+						background: #f1f1f1;
+						height: 55px;
+
+						li {
+							float: left; 
+							width: 20%;
+							color: $blue;
+							font-size: 16px;
+							padding: 10px 5px;
+							margin: 0;
+							border: none;
+							background: none;
+							border-radius: 0;
+							height: 100%;
+
+							&.ui-tabs-active {
+								padding-bottom: 0;
+								color: white;
+								background: $red;
+								font-weight: 500;
+								transition: all 0.3s ease-out;
+							}
+
+							&:after {
+								content: "";
+								display: block;
+								clear: both;
+							}
+
+							.ui-tabs-anchor {
+								display: block; 
+								width: 100%;
+								text-align: center;
+								font-weight: 600;
+								outline: 0;
+								color: inherit;
+							}
+						}
+					}
+
+					// .ui-tabs-panel {
+					// 	overflow: auto;
+					// }
+
+					.no-events {
+						font-size: 18px;
+						text-align: center;
+						margin-top: 25px;
+					}
+
+					.event-wrapper {
+						width: 90%;
+						height: 250px;
+						text-align: center;
+						overflow: hidden;
+						padding: 10px 0 40px;
+						margin: 15px auto;
+						border-bottom: 1px solid #ccc;
+
+						.image-wrapper {
+							float: left;
+							width: 35%;
+							height: 100%;
+							position: relative;
+							background-size: cover;
+							background-repeat: no-repeat;
+							background-position: center center;
+
+							&:after {
+								content: "";
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								height: 100%;
+								width: 100%;
+								background: rgba(0,0,0,0.5);
+							}
+
+							img {
+								height: 100%;
+								width: 100%;
+							}
+
+							.event-date {
+								position: absolute;
+								margin: auto;
+								text-align: center;
+								left: 0;
+								top: 50%;
+								transform: translateY(-50%);
+								color: white;
+								font-size: 35px;
+								z-index: 500;
+								width: 100%;
+								font-family: 'Libre Baskerville', serif;					
+							}
+						}
+
+						.text-wrapper {
+							width: 65%;
+							height: 100%;
+							float: right;
+							text-align: left;
+							padding-left: 75px;
+
+							p {
+								margin: 0;
+								padding: 0;
+								line-height: normal;
+
+								&.event-time {
+									display: inline-block;
+									font-style: italic;
+									font-size: 14px;
+									margin: 0 0 10px 0;
+								}
+							}
+
+							.event-description-container {
+								overflow: hidden;
+								height: 75px;
+								padding-right: 10px;
+
+								.event-description {
+									line-height: 24px;
+									font-size: 16px;
+
+									a {
+										text-decoration: underline;
+										font-weight: 600;
+										display: inline;
+									}
+								}
+							}
+
+							h3 {
+								text-decoration: none;
+								font-weight: 600;
+								font-size: 30px;
+								font-style: italic;
+								margin: 0;
+								padding: 0;
+								line-height: 40px;
+								text-overflow: ellipsis;
+								overflow: hidden;
+								white-space: nowrap;
+								
+								a {
+									&:hover {
+										text-decoration: underline;
+									}
+								}
+							}
+							
+							.icon-wrapper {
+								overflow: hidden;
+								width: 100%;
+								display: block;
+
+								icon {
+									text-align: right; 
+									display: block;
+									font-size: 30px;
+									padding-right: 10px;
+								}
+							}
+						}
+					}
+				}
+
+		}
 
 			.sponsors {
 				display: block;

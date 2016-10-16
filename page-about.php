@@ -20,6 +20,7 @@ get_header();
 		<main id="main" class="site-main" role="main">
 			<div id="about-page">
 				<section id="section-1">
+					<div class="overlay"></div>
 					<div class="text-wrapper">
 						<h1>WHAT WE DO</h1>
 					</div>

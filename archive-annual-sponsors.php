@@ -11,24 +11,27 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div id="events-page">
+		<div id="about-page">
 			<section id="section-1">
+				<div class="overlay"></div>
 				<div class="text-wrapper">
-					<h1>
-						SPONSORS
-					</h1>
+					<h1>WHAT WE DO</h1>
 				</div>
 			</section>
-
-
-<!-- get page content -->
 			<section id="section-2">
-				<!-- SIDE MENU -->
-				<?php get_sidebar(); ?>
 
-				<div class="event-header">
-          <h3>*Reading from archive-annual-sponsors.php*</h3>
+				<div class="side-menu">
+					
+					<h1>
+						About
+					</h1>
 
+					<?php get_sidebar(); ?>
+				</div>
+
+				<div class="text-wrapper">
+
+					<!-- get page content -->
 					<!-- query content on page: -->
 					<?php
 						$args = array(
@@ -50,9 +53,8 @@ get_header(); ?>
 						}
 					?>
 
-				</div>
 
-			</section>
+			
 <!-- end get page content -->
 
 		<section id="events-tabs-section">
@@ -74,7 +76,7 @@ get_header(); ?>
 			<div id="tabs">
 
 <!-- LOOP #1: Make tab headers -->
-			  <ul>
+			  <ul class="ui-tabs-nav">
 					<?php $firstCounter = 1; ?>
 					<?php foreach ( $chapterSlugArr as $chapterSlug => $chapterName ) { ?>
 			    	<li><a href="#tabs-<?php echo $firstCounter; ?>"><?php echo $chapterName; ?></a></li>
@@ -182,9 +184,13 @@ get_header(); ?>
 			<?php } // end loop over chapters to get all posts ?>
 <!-- end LOOP #2 -->
 
-			</div> <!-- #tabs end jQuery tabs section-->
-		</section> <!-- end #events-tabs-section -->
+					</div> <!-- #tabs end jQuery tabs section-->
+				</section> <!-- end #events-tabs-section -->
+			</div><!-- End text wrapper -->
+		</section><!-- End section 2 -->
 
+
+		</div><!-- About div -->
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
 

@@ -30,7 +30,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="nav-left">
 			<div class="site-branding">
-				<a href="/pwc">
+				<a href="#">
 					<h1>PWC</h1>
 				</a>
 				<a href="/pwc">
