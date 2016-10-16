@@ -5,8 +5,19 @@
 	}
 
 	#section-1 {
-		height: 450px;
+		height: 500px;
 		position: relative;
+
+		.overlay {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.10);
+		}
 
 		.text-wrap {
 			width: 100%;
@@ -76,7 +87,6 @@
 	}
 	
 	#section-2 {
-		padding-top: 12rem;
 
 		.about {
 			max-width: 60%;

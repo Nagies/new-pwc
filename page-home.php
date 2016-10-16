@@ -20,6 +20,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div id="index-page">
 				<section id="section-1">
+					<div class="overlay"></div>
 					<?php
 						echo do_shortcode("[metaslider id=3193 percentwidth=100]");
 					?>
