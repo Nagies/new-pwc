@@ -471,7 +471,7 @@ a:hover, a:active {
   left: 0;
   right: 0;
   background: transparent;
-  z-index: 100;
+  z-index: 500;
   padding-top: 15px;
 }
 #masthead .nav-left {
@@ -979,7 +979,7 @@ a:hover, a:active {
   height: 75px;
 }
 #about-page body {
-  background-color: blue;
+  background: #f1f1f1;
 }
 #about-page h1 {
   font-size: 22px;
@@ -994,7 +994,7 @@ a:hover, a:active {
 }
 #about-page #section-1 {
   height: 500px;
-  background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1452215199360-c16ba37005fe.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1473181488821-2d23949a045a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=10ad28b55871add341525aac5e8fca7e");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1008,40 +1008,48 @@ a:hover, a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 100;
 }
 #about-page #section-1 .text-wrapper {
+  z-index: 500;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#about-page #section-1 .text-wrapper h1 {
   position: absolute;
-  bottom: 0;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: auto;
-  width: 50%;
-  height: 20%;
-}
-#about-page #section-1 .text-wrapper h1 {
   text-align: center;
   color: white;
   font-size: 34px;
 }
 #about-page #section-2 {
+  width: 100%;
+  background: #f1f1f1;
+}
+#about-page #section-2 .about-container {
   max-width: 1150px;
-  margin: 5rem auto;
+  margin: 0 auto;
   text-align: center;
   overflow: hidden;
+  padding: 50px 0;
 }
-#about-page #section-2 .side-menu {
+#about-page #section-2 .about-container .side-menu {
   float: left;
   max-width: 500px;
   text-align: left;
 }
-#about-page #section-2 .side-menu .side_menu_class ul {
+#about-page #section-2 .about-container .side-menu .side_menu_class ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#about-page #section-2 .side-menu .side_menu_class ul li a {
+#about-page #section-2 .about-container .side-menu .side_menu_class ul li a {
   text-decoration: none;
   color: #454552;
   font-weight: 300;
@@ -1049,58 +1057,69 @@ a:hover, a:active {
   margin: 5px 0;
   font-size: 20px;
 }
-#about-page #section-2 .side-menu .side_menu_class ul li a.active {
+#about-page #section-2 .about-container .side-menu .side_menu_class ul li a.active {
   font-weight: 600;
 }
-#about-page #section-2 .side-menu h1 {
+#about-page #section-2 .about-container .side-menu h1 {
   color: #145268;
   font-weight: 400;
   font-size: 20px;
 }
-#about-page #section-2 .text-wrapper {
+#about-page #section-2 .about-container .text-wrapper {
   width: 800px;
   margin: 0 auto;
   float: right;
   text-align: left;
   overflow: hidden;
 }
-#about-page #section-2 .text-wrapper p {
-  margin-bottom: 30px;
+#about-page #section-2 .about-container .text-wrapper p {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
-#about-page #section-2 .text-wrapper h1 {
+#about-page #section-2 .about-container .text-wrapper .short-title {
+  text-align: center;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 600;
+}
+#about-page #section-2 .about-container .text-wrapper h1 {
   font-weight: 400;
   font-size: 20px;
+  color: #145268;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section {
   padding-bottom: 50px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section .events-li {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section .events-li {
   list-style: none;
   text-align: center;
   font-weight: 600;
+  font-size: 14px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section .events-li .events-a {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section .events-li .events-a {
   color: black;
   font-size: 18px;
   display: inline-block;
   margin: 30px 0;
   text-decoration: underline;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs {
   width: 100%;
   margin: 20px auto 0;
   padding: 0;
   border: none;
   overflow: hidden;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .ui-tabs-nav {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav {
   margin: 0;
   padding: 0;
   border: none;
   background: #f1f1f1;
   height: 55px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li {
   float: left;
   width: 20%;
   color: #145268;
@@ -1112,19 +1131,19 @@ a:hover, a:active {
   border-radius: 0;
   height: 100%;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li.ui-tabs-active {
-  padding-bottom: 0;
-  color: white;
-  background: #e85a71;
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li.ui-tabs-active {
+  padding: 10px 0;
+  color: black;
+  background: white;
   font-weight: 500;
   transition: all 0.3s ease-out;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li:after {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li:after {
   content: "";
   display: block;
   clear: both;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li .ui-tabs-anchor {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li .ui-tabs-anchor {
   display: block;
   width: 100%;
   text-align: center;
@@ -1132,12 +1151,12 @@ a:hover, a:active {
   outline: 0;
   color: inherit;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .no-events {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .no-events {
   font-size: 18px;
   text-align: center;
   margin-top: 25px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper {
   width: 90%;
   height: 250px;
   text-align: center;
@@ -1146,7 +1165,7 @@ a:hover, a:active {
   margin: 15px auto;
   border-bottom: 1px solid #ccc;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper {
   float: left;
   width: 35%;
   height: 100%;
@@ -1155,7 +1174,7 @@ a:hover, a:active {
   background-repeat: no-repeat;
   background-position: center center;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper:after {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1166,11 +1185,11 @@ a:hover, a:active {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper img {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper img {
   height: 100%;
   width: 100%;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper .event-date {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper .event-date {
   position: absolute;
   margin: auto;
   text-align: center;
@@ -1183,39 +1202,39 @@ a:hover, a:active {
   width: 100%;
   font-family: 'Libre Baskerville', serif;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper {
   width: 65%;
   height: 100%;
   float: right;
   text-align: left;
   padding-left: 75px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper p {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper p {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper p.event-time {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper p.event-time {
   display: inline-block;
   font-style: italic;
   font-size: 14px;
   margin: 0 0 10px 0;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container {
   overflow: hidden;
   height: 75px;
   padding-right: 10px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container .event-description {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container .event-description {
   line-height: 24px;
   font-size: 16px;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container .event-description a {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .event-description-container .event-description a {
   text-decoration: underline;
   font-weight: 600;
   display: inline;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 {
   text-decoration: none;
   font-weight: 600;
   font-size: 30px;
@@ -1227,41 +1246,41 @@ a:hover, a:active {
   overflow: hidden;
   white-space: nowrap;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 a:hover {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 a:hover {
   text-decoration: underline;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .icon-wrapper {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .icon-wrapper {
   overflow: hidden;
   width: 100%;
   display: block;
 }
-#about-page #section-2 .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .icon-wrapper icon {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper .icon-wrapper icon {
   text-align: right;
   display: block;
   font-size: 30px;
   padding-right: 10px;
 }
-#about-page #section-2 .text-wrapper .sponsors {
+#about-page #section-2 .about-container .text-wrapper .sponsors {
   display: block;
   text-decoration: none;
   color: #454552;
   padding: 5px 0;
 }
-#about-page #section-2 .text-wrapper .contact {
+#about-page #section-2 .about-container .text-wrapper .contact {
   float: left;
   width: 50%;
   height: 300px;
   padding: 1rem 0;
 }
-#about-page #section-2 .text-wrapper .contact h1 {
+#about-page #section-2 .about-container .text-wrapper .contact h1 {
   margin: 5px 0;
 }
-#about-page #section-2 .text-wrapper .contact p {
+#about-page #section-2 .about-container .text-wrapper .contact p {
   padding: 0;
   margin: 0;
   font-size: 16px;
 }
-#about-page #section-2 .divider {
+#about-page #section-2 .about-container .divider {
   border: 1px solid #454552;
   width: 5rem;
   margin: 50px auto;

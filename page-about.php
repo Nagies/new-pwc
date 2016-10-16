@@ -22,10 +22,11 @@ get_header();
 				<section id="section-1">
 					<div class="overlay"></div>
 					<div class="text-wrapper">
-						<h1>WHAT WE DO</h1>
+						<h1>WHO WE ARE</h1>
 					</div>
 				</section>
 				<section id="section-2">
+					<div class="about-container">
 
 					<div class="side-menu">
 						
@@ -72,6 +73,7 @@ get_header();
 						<p class="m-bottom">
 							PWC encourages and advances the aims and goals of woman- and minority-owned businesses. The PWC annual W/MBE Technical Assistance Workshop & Opportunity Fair disseminates information on government certification and promotes business interchange with public agencies and companies with supplier diversity programs.
 						</p>
+					</div>
 					</div>
 				</section>
 			</div>

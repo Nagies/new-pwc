@@ -20,18 +20,26 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div id="about-page">
 				<section id="section-1">
+					<div class="overlay"></div>
 					<div class="text-wrapper">
 						<h1>CONTACT</h1>
 					</div>
 				</section>
 
-				</section>
-
-				<!-- SIDEBAR -->
-				<?php get_sidebar(); ?>
-
-
 				<section id="section-2">
+					<div class="about-container">
+						<div class="side-menu">
+						
+						<h1>
+							About
+						</h1>
+
+						<?php get_sidebar(); ?>
+						</div>
+
+					<div class="text-wrapper">
+
+				<!-- <section id="section-2">
 					<div class="side-menu">
 						<h1>
 							About
@@ -57,7 +65,7 @@ get_header(); ?>
 							</h3>
 						</a>
 					</div>
-					<div class="text-wrapper">
+					<div class="text-wrapper"> -->
 
 						<h1>
 							CONTACT A CHAPTER
@@ -117,8 +125,9 @@ get_header(); ?>
 						</div>
 
 
-					</div>
 				</section>
+			</div>
+
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

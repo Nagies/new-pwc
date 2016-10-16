@@ -11,8 +11,9 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div id="events-page">
+		<div id="about-page">
 			<section id="section-1">
+				<div class="overlay"></div>
 				<div class="text-wrapper">
 					<h1>
 						BOARD OF DIRECTORS
@@ -21,9 +22,19 @@ get_header(); ?>
 			</section>
 
 			<section id="section-2">
+				<div class="about-container">
+					<div class="side-menu">
+					
+					<h1>
+						About
+					</h1>
 
-				<div class="event-header">
-          <h3>*Reading from archive-board-members.php*</h3>
+					<?php get_sidebar(); ?>
+				</div>
+
+				<div class="text-wrapper">
+
+
 
 <!-- query content on page: -->
 					<?php
@@ -38,7 +49,7 @@ get_header(); ?>
 							$page_content = $obj->post_content;
 							?>
 							<div>
-								<p>
+								<p class="short-title">
 									<?php echo $page_content ?>
 								</p>
 							</div>
@@ -46,13 +57,7 @@ get_header(); ?>
 						}
 					?>
 
-				</div>
 
-			</section>
-
-
-<!-- SIDEBAR -->
-			<?php get_sidebar(); ?>
 
 		<section id="events-tabs-section">
 
@@ -210,7 +215,8 @@ get_header(); ?>
 
 			</div> <!-- #tabs end jQuery tabs section-->
 		</section> <!-- end #events-tabs-section -->
-
+	</div>
+</div>
 
 	</main><!-- .site-main -->
 </div><!-- .content-area -->

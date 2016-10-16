@@ -15,10 +15,11 @@ get_header(); ?>
 			<section id="section-1">
 				<div class="overlay"></div>
 				<div class="text-wrapper">
-					<h1>WHAT WE DO</h1>
+					<h1>SPONSORS</h1>
 				</div>
 			</section>
 			<section id="section-2">
+				<div class="about-container">
 
 				<div class="side-menu">
 					
@@ -45,7 +46,7 @@ get_header(); ?>
 							$page_content = $obj->post_content;
 							?>
 							<div>
-								<p>
+								<p class="short-title">
 									<?php echo $page_content ?>
 								</p>
 							</div>
@@ -188,7 +189,7 @@ get_header(); ?>
 				</section> <!-- end #events-tabs-section -->
 			</div><!-- End text wrapper -->
 		</section><!-- End section 2 -->
-
+		</div>
 
 		</div><!-- About div -->
 	</main><!-- .site-main -->
