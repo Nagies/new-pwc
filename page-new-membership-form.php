@@ -11,7 +11,6 @@
 // Pulling content from old template: http://pwcusa.org/membership.php
 // page-new-membership-app.php
 ?>
-<p>New Membership Application</p>
 
 <?php
 
@@ -123,9 +122,14 @@ if ( $wp_error ) {
 
 
 <?php get_header(); ?>
-<h2>Reading from page-new-membership-form.php</h2>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+		<div id="jobs-page">
+			<section id="section-1-show">
+
+			</section>
+
+			<section id="section-2-show">
 
 <!-- query content on page: -->
 	<?php
@@ -140,16 +144,12 @@ if ( $wp_error ) {
 		$page_content = $obj->post_content; ?>
 
 		<?php if ($page_content) { ?>
-			<div>
-				<p>
+				<h3 class="page-content-header">
 					<?php echo $page_content ?>
-				</p>
-			</div>
+				</h3>
 		<?php } ?>
 	<?php } ?>
 <!-- end query page content -->
-
-	<hr>
 
   <form id="new-member-submission-form" class="" method="post">
 
@@ -175,41 +175,47 @@ if ( $wp_error ) {
 					 size=60 value=""><br>
 
 		<!-- preferred mailing address | meta | radio -->
-		<label for="preferred_mailing">Please indicate preferred mailing address:</label><br>
-		<input type="radio" name="preferred_mailing" value="business"> Business
-		<input type="radio" name="preferred_mailing" value="home"> Home<br>
-
-		<hr>
+			<label for="preferred_mailing">Please indicate preferred mailing address:</label>
+			<div style="overflow: hidden;">
+				<div class="radio-wrapper">
+					<label for="business">Business</label>
+					<input type="radio" name="preferred_mailing" value="business">
+				</div>
+				<div class="radio-wrapper">
+					<label for="home">Home</label>
+					<input type="radio" name="preferred_mailing" value="home">
+				</div> 
+			</div>
 
 		<p><b>Business Information:</b></p>
 
 		<!-- biz address | meta -->
 		<label for="biz_address">Business Address:</label>
 		<input type="text" name="biz_address" id="biz_address"
-					 value="" size=60><br>
+					 value="" size=60>
 
 		<!-- biz website | meta -->
 		<label for="biz_website">Business website:</label>
 		<input type="text" name="biz_website" id="biz_website"
-					 value="" size=60><br>
+					 value="" size=60>
 
 		<!-- biz phone | meta -->
 		<label for="biz_phone">Business phone number:</label>
 		<input type="text" name="biz_phone" id="biz_phone"
-					 value="" size=60><br>
+					 value="" size=60>
 
 		<!-- biz fax | meta -->
 		<label for="biz_fax">Business fax number:</label>
 		<input type="text" name="biz_fax" id="biz_fax"
-					 value="" size=60><br>
+					 value="" size=60>
 
 		<!-- biz email | meta -->
 		<label for="biz_email">Business email:</label>
 		<input type="text" name="biz_email" id="biz_email"
-					 value="" size=60><br><br>
+					 value="" size=60>
 
 		<!-- Biz type/specialty | meta -->
-		<label for="biz_type_specialty">Business type and specialty:</label><br>
+		<label for="biz_type_specialty">Business type and specialty:</label>
 		<span>i.e., GC, CM, Sub. Prof. Service, Consulting, Supplier, Manufacturer. Please be specific regarding product(s).</span>
 		<textarea name="biz_type_specialty" id="biz_type_specialty"></textarea>
 
@@ -219,12 +225,12 @@ if ( $wp_error ) {
 			<option value=""></option>
 			<option value="yes">Yes</option>
 			<option value="no">No</option>
-		</select><br>
+		</select>
 
 		<!-- biz owner percentage | meta -->
 		<label for="biz_percentage">Percentage owned by you:</label>
 		<input type="text" name="biz_percentage" id="biz_percentage"
-					 value="" size=5>%<br><br>
+					 value="" size=5>
 
 
 		<!-- employee status | meta -->
@@ -234,7 +240,7 @@ if ( $wp_error ) {
 			<option value="owner">Owner</option>
 			<option value="partner">Partner</option>
 			<option value="employee">Employee</option>
-		</select><br>
+		</select>
 
 		<!-- Annual sales | meta -->
 		<label for="annual_gross">Annual gross sales:</label>
@@ -246,9 +252,8 @@ if ( $wp_error ) {
 			<option value="5m-10m">$5M&nbsp;to&nbsp;$10M</option>
 			<option value="10m-25m">$10M&nbsp;to&nbsp;$25M</option>
 			<option value="25m-plus">$25M+</option>
-		</select><br>
+		</select>
 
-		<hr>
 
 		<p><b>Home Information:</b></p>
 
@@ -275,35 +280,49 @@ if ( $wp_error ) {
 		<!-- home email | meta -->
 		<label for="home_email">Home email:</label>
 		<input type="text" name="home_email" id="home_email"
-					 value="" size=60><br><br>
-
-		<hr>
+					 value="" size=60><br>
 
 		<!-- chapter_preference | taxonomy 'chapter' -->
-		<b><label for="chapter_preference">Chapter Preference:</label></b><br>
-		<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span><br><br>
-		<input type="radio" name="chapter_preference" value="new-york">New York <br>
-		<input type="radio" name="chapter_preference" value="new-jersey">New Jersey <br>
-		<input type="radio" name="chapter_preference" value="connecticut">Connecticut <br>
-		<input type="radio" name="chapter_preference" value="washington-dc">Washington, D.C. <br><br>
-
-
-		<hr>
+		<b><label for="chapter_preference">Chapter Preference:</label></b>
+		<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span><br>
+		<div style="overflow: hidden;">
+			<div class="radio-wrapper">
+				<label for="new-york">New York</label>
+				<input type="radio" name="chapter_preference" value="new-york">
+			</div>
+			<div class="radio-wrapper">
+				<label for="new-jersey">New Jersey</label>
+				<input type="radio" name="chapter_preference" value="new-jersey">
+			</div>
+			<div class="radio-wrapper">
+				<label for="connecticut">Connecticut</label>
+				<input type="radio" name="chapter_preference" value="connecticut">
+			</div>
+			<div class="radio-wrapper">
+				<label for="washington-dc">Washington, D.C.</label>
+				<input type="radio" name="chapter_preference" value="washington-dc">
+			</div>
+		</div>
 
 		<!-- membership category | meta -->
     <div>
-      <label for="member_type"><b>Membership Category:</b></label><br>
-      <span>Final approval of membership is at the discretion of the PWC Board of Directors.</span><br><br>
+      <label for="member_type"><b>Membership Category:</b></label>
+      <span>Final approval of membership is at the discretion of the PWC Board of Directors.</span><br>
+			
+			<label for="member_type"><b>Corporate A</b>: gross income: $5M+ / entitled to 6 representatives / annual dues: $750</label>
       <input type="radio" value="corp-a" name="member_type">
-        <b>Corporate A</b>: gross income: $5M+ / entitled to 6 representatives / annual dues: $750<br>
-      <input type="radio" value="corp-b" name="member_type">
-        <b>Corporate B</b>: gross income: under $5M / entitled to 4 representatives / annual dues: $450<br>
-      <input type="radio" value="business" name="member_type">
-        <b>Business</b>: sole prop./consultant  with 3 or fewer employees / entitled to 2 reps / annual dues: $275<br>
-      <input type="radio" value="individual" name="member_type">
-        <b>Individual</b>: employee / entitled to self-representation (does not extend to employer) / annual dues: $225<br>
-      <input type="radio" value="student" name="member_type">
-        <b>Student</b>: matriculating at accredited institution; non-voting category / annual dues: $65
+
+      <label for="member_type"><b>Corporate B</b>: gross income: under $5M / entitled to 4 representatives / annual dues: $450</label>
+      <input type="radio" value="corp-a" name="member_type">
+
+      <label for="member_type"><b>Business</b>: sole prop./consultant  with 3 or fewer employees / entitled to 2 reps / annual dues: $275</label>
+      <input type="radio" value="corp-a" name="member_type">
+
+      <label for="member_type"><b>Individual</b>: employee / entitled to self-representation (does not extend to employer) / annual dues: $225</label>
+      <input type="radio" value="corp-a" name="member_type">
+
+      <label for="member_type"><b>Student</b>: matriculating at accredited institution; non-voting category / annual dues: $65</label>
+      <input type="radio" value="corp-a" name="member_type">
     </div>
 
 		<div>
@@ -316,21 +335,16 @@ if ( $wp_error ) {
       <b><p>Student applicants, please indicate:</p></b>
 
 			<!-- student: school | meta -->
-      <div>
-        <p>School:</p>
+        <label for="student_app_school">School</label>
         <input type="text" name="student_app_school" value="">
-      </div>
 
 			<!-- student: area of concentration | meta -->
-      <div>
-        <p>Area of concentration:</p>
+				<label for="student_app_concentration">Area of Concentration</label>
         <input type="text" name="student_app_concentration" value="">
-      </div>
 
     </div>
 
 
-    <hr>
 
 
     <p><b>Business Survey:</b></p>
@@ -359,10 +373,16 @@ if ( $wp_error ) {
 
 			<!-- gov agency | meta -->
     <div>
-      <span>Is your company currently certified by any government agency as:</span><br>
-      <input type="checkbox" name="gov_agency[]" value="mbe"><label for="">Minority Business Enterprise (MBE)</label><br>
-      <input type="checkbox" name="gov_agency[]" value="dbe"><label for="">Disadvantaged Business Enterprise (DBE)</label><br>
-      <input type="checkbox" name="gov_agency[]" value="wbe"><label for="">Women's Business Enterprise (WBE)</label><br>
+      <p><b>Is your company currently certified by any government agency as:</b></p>
+
+      <label for="">Minority Business Enterprise (MBE)</label>
+      <input type="checkbox" name="gov_agency[]" value="mbe">
+
+      <label for="">Disadvantaged Business Enterprise (DBE)</label>
+      <input type="checkbox" name="gov_agency[]" value="dbe">
+
+      <label for="">Women's Business Enterprise (WBE)</label>
+      <input type="checkbox" name="gov_agency[]" value="wbe">
     </div>
 
 		<!-- agency certification | meta -->
@@ -373,9 +393,11 @@ if ( $wp_error ) {
 
 		<!-- submit btn -->
 		<input type="hidden" name="submitted" id="submitted" value="true" />
-		<button type="submit">Submit</button>
+		<button type="submit" class="submit">Submit</button>
 
   </form>
+
+</section>
 
 	</main><!-- .site-main -->
 </div><!-- .content-area -->

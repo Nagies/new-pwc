@@ -140,7 +140,12 @@
 		margin: 50px auto;
 		overflow: hidden;
 
-		#job-forms {
+		.page-content-header {
+			text-align: center;
+			font-size: 22px;
+		}
+
+		#job-forms, #new-member-submission-form {
 			max-width: 600px;
 			margin: 0 auto;
 			padding-top: 15px;
@@ -154,19 +159,24 @@
 				padding-bottom: 5px;
 			}
 
-			input {
+			input, textarea, select {
 				width: 100%;
 				margin-bottom: 15px;
 				padding: 5px 10px;
 			}
 
-			.checkbox-wrapper {
+			select {
+				background: white;
+				height: 35px;
+			}
+
+			.checkbox-wrapper, .radio-wrapper {
 				float: left;
 				width: 25%;
 
 				&:after {
 					content: '';
-					display: table;
+					display: block;
 					clear: both;
 				}
 			}

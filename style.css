@@ -1413,33 +1413,41 @@ a:hover, a:active {
   margin: 50px auto;
   overflow: hidden;
 }
-#jobs-page #section-2-show #job-forms {
+#jobs-page #section-2-show .page-content-header {
+  text-align: center;
+  font-size: 22px;
+}
+#jobs-page #section-2-show #job-forms, #jobs-page #section-2-show #new-member-submission-form {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 15px;
 }
-#jobs-page #section-2-show #job-forms h3 {
+#jobs-page #section-2-show #job-forms h3, #jobs-page #section-2-show #new-member-submission-form h3 {
   text-align: center;
 }
-#jobs-page #section-2-show #job-forms label {
+#jobs-page #section-2-show #job-forms label, #jobs-page #section-2-show #new-member-submission-form label {
   display: block;
   padding-bottom: 5px;
 }
-#jobs-page #section-2-show #job-forms input {
+#jobs-page #section-2-show #job-forms input, #jobs-page #section-2-show #new-member-submission-form input, #jobs-page #section-2-show #job-forms textarea, #jobs-page #section-2-show #new-member-submission-form textarea, #jobs-page #section-2-show #job-forms select, #jobs-page #section-2-show #new-member-submission-form select {
   width: 100%;
   margin-bottom: 15px;
   padding: 5px 10px;
 }
-#jobs-page #section-2-show #job-forms .checkbox-wrapper {
+#jobs-page #section-2-show #job-forms select, #jobs-page #section-2-show #new-member-submission-form select {
+  background: white;
+  height: 35px;
+}
+#jobs-page #section-2-show #job-forms .checkbox-wrapper, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper, #jobs-page #section-2-show #job-forms .radio-wrapper, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper {
   float: left;
   width: 25%;
 }
-#jobs-page #section-2-show #job-forms .checkbox-wrapper:after {
+#jobs-page #section-2-show #job-forms .checkbox-wrapper:after, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper:after, #jobs-page #section-2-show #job-forms .radio-wrapper:after, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper:after {
   content: '';
-  display: table;
+  display: block;
   clear: both;
 }
-#jobs-page #section-2-show #job-forms .submit {
+#jobs-page #section-2-show #job-forms .submit, #jobs-page #section-2-show #new-member-submission-form .submit {
   background: #e85a71;
   color: white;
   display: block;
