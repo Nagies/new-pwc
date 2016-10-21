@@ -190,27 +190,27 @@ if ( $wp_error ) {
 				</div>
 
 
-				<h3>Billing Information:</h3>
+				<h3>Billing Information</h3>
 
 				<!-- billing name | meta -->
-				<label for="billing_name">Billing Contact Name:*</label>
+				<label for="billing_name">Billing Contact Name*</label>
 				<input type="text" name="billing_name" id="billing_name" class="required"
-							 value="<?php	echo $_POST['billing_name']; ?>" size=60><br>
+							 value="<?php	echo $_POST['billing_name']; ?>" size=60>
 
 				<!-- billing email | meta -->
-				<label for="billing_email">Email address of billing contact:*</label>
+				<label for="billing_email">Billing Contact Email*</label>
 				<input type="text" name="billing_email" id="billing_email" class="required"
-							 value="<?php	echo $_POST['billing_email']; ?>" size=60><br>
+							 value="<?php	echo $_POST['billing_email']; ?>" size=60>
 
 				<!-- billing address | meta -->
-				<label for="billing_address">Billing Contact Address:</label>
+				<label for="billing_address">Billing Contact Address</label>
 				<input type="text" name="billing_address" id="billing_address"
-							 value="<?php	echo $_POST['billing_address']; ?>" size=60><br>
+							 value="<?php	echo $_POST['billing_address']; ?>" size=60>
 
 				<!-- billing phone | meta -->
-				<label for="billing_phone">Billing Contact Phone:</label>
+				<label for="billing_phone">Billing Contact Phone</label>
 				<input type="text" name="billing_phone" id="billing_phone"
-							 value="<?php	echo $_POST['billing_phone']; ?>" size=60><br>
+							 value="<?php	echo $_POST['billing_phone']; ?>" size=60>
 
 				<!-- submit btn -->
 				<input type="hidden" name="submitted" id="submitted" value="true" />
