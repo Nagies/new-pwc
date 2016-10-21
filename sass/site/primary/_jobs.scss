@@ -169,7 +169,7 @@
 
 			label {
 				display: block;
-				padding-bottom: 5px;
+				padding-bottom: 10px;
 			}
 
 			input, textarea, select {
@@ -186,11 +186,19 @@
 			.checkbox-wrapper, .radio-wrapper {
 				float: left;
 				width: 25%;
+				padding: 5px 0;
+				margin-bottom: 15px;
 
 				&:after {
 					content: '';
 					display: block;
 					clear: both;
+				}
+
+				input, label {
+					display: inline-block;
+					width: auto;
+					margin-right: 5px;
 				}
 			}
 

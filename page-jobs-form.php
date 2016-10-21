@@ -160,8 +160,8 @@ if ( $wp_error ) {
 						//var_dump($term);
 						?>
 						<div class="checkbox-wrapper">
-							<label for="<?php echo $term->slug ?>"><?php echo $term->name ?> <?php // echo $term->term_id ?></label>
 							<input type="checkbox" name="job_category[]" id="<?php echo $term->slug ?>" value="<?php echo $term->slug ?>">
+							<label for="<?php echo $term->slug ?>"><?php echo $term->name ?> <?php // echo $term->term_id ?></label>
 						</div>
 
 
@@ -172,10 +172,9 @@ if ( $wp_error ) {
 
 		 		<div style="clear: both;"></div>
 
-		 		<div style="padding-top: 5px;">
 
 				<!-- *job description | post content -->
-				<label for="job_description">Job Description:*</label>
+				<label for="job_description">Job Description*</label>
 				<textarea name="job_description" id="job_description">
 					<?php
 					if (isset( $_POST['job_description'])) {
