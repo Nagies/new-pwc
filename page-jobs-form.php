@@ -105,115 +105,120 @@ if ( $wp_error ) {
 
 	<section id="job-forms">
 	  <form id="job-submission-form" class="" method="post">
-			<h3>Job Information:</h3>
+			<h3>Job Information</h3>
+			<p>
+				Fill out the form below and a member of PWC will contact you for payment details. After payment is received, jobs will be posted on the website for 6 months.
+			</p>
 
-			<!-- *job title | post title -->
-			<label for="job_title">Job title:*</label>
-			<input type="text" name="job_title" id="job_title" class="required"
-			value="<?php echo get_post_meta($post->ID, 'job_title', true) ?>"
-			size=60><br>
+			<div class="form-fields">
+				
+				<!-- *job title | post title -->
+				<label for="job_title">Job Title*</label>
+				<input type="text" name="job_title" id="job_title" class="required"
+				value="<?php echo get_post_meta($post->ID, 'job_title', true) ?>"
+				size=60>
 
-			<!-- company name | meta -->
-			<label for="company_name">Company Name:*</label>
-			<input type="text" name="company_name" id="company_name" class="required"
-						 size=60 value="<?php echo $_POST['company_name']; ?>"><br>
+				<!-- company name | meta -->
+				<label for="company_name">Company Name*</label>
+				<input type="text" name="company_name" id="company_name" class="required"
+							 size=60 value="<?php echo $_POST['company_name']; ?>">
 
-			<!-- job location | meta -->
-			<label for="job_location">Location:*</label>
-			<input type="text" name="job_location" id="job_location" class="required"
-						 value="<?php echo $_POST['job_location']; ?>" size=60><br>
+				<!-- job location | meta -->
+				<label for="job_location">Location*</label>
+				<input type="text" name="job_location" id="job_location" class="required"
+							 value="<?php echo $_POST['job_location']; ?>" size=60>
 
-		  <!-- company website | meta -->
-			<label for="company_website">Company Website:</label>
-			<input type="text" name="company_website" id="company_website"
-						 value="<?php echo $_POST['company_website']; ?>" size=60><br>
+			  <!-- company website | meta -->
+				<label for="company_website">Company Website</label>
+				<input type="text" name="company_website" id="company_website"
+							 value="<?php echo $_POST['company_website']; ?>" size=60>
 
-			<!-- job url | meta -->
-			<label for="job_url">URL of Job Posting:</label>
-			<input type="text" name="job_url" id="job_url"
-						 value="<?php echo $_POST['job_url']; ?>" size=60><br>
+				<!-- job url | meta -->
+				<label for="job_url">URL of Job Posting</label>
+				<input type="text" name="job_url" id="job_url"
+							 value="<?php echo $_POST['job_url']; ?>" size=60>
 
-			<!-- contact email | meta -->
-			<label for="job_contact_email">Job contact email:</label>
-			<input type="text" name="job_contact_email" id="job_contact_email"
-						 value="<?php echo $_POST['job_contact_email']; ?>" size=60><br>
-
-
-		  <!-- job tax | meta?? -->
-			<label>Job Type:</label>
-			<?php
-
-			$taxonomies = array(
-				'job_type'
-			);
-			$args = array(
-				'hide_empty' => false
-			);
-			$terms = get_terms($taxonomies, $args);
-			if ( ! is_wp_error( $terms ) ) {
-				foreach ($terms as $term) {
-					//var_dump($term);
-					?>
-					<div class="checkbox-wrapper">
-						<label for="<?php echo $term->slug ?>"><?php echo $term->name ?> <?php // echo $term->term_id ?></label>
-						<input type="checkbox" name="job_category[]" id="<?php echo $term->slug ?>" value="<?php echo $term->slug ?>">
-					</div>
+				<!-- contact email | meta -->
+				<label for="job_contact_email">Job Contact Email</label>
+				<input type="text" name="job_contact_email" id="job_contact_email"
+							 value="<?php echo $_POST['job_contact_email']; ?>" size=60>
 
 
-					<?php
-				}
-			}
-	 		?>
-
-	 		<div style="clear: both;"></div>
-
-	 		<div style="padding-top: 5px;">
-
-			<!-- *job description | post content -->
-			<label for="job_description">Job Description:*</label>
-			<textarea name="job_description" id="job_description">
+			  <!-- job tax | meta?? -->
+				<label>Job Type</label>
 				<?php
-				if (isset( $_POST['job_description'])) {
-					if (function_exists('stripslashes')) {
-						// echo stripslashes( $_POST['job_description'] );
-						echo wp_strip_all_tags( $_POST['job_description'], true );
-					} else {
-						echo $_POST['job_description'];
+
+				$taxonomies = array(
+					'job_type'
+				);
+				$args = array(
+					'hide_empty' => false
+				);
+				$terms = get_terms($taxonomies, $args);
+				if ( ! is_wp_error( $terms ) ) {
+					foreach ($terms as $term) {
+						//var_dump($term);
+						?>
+						<div class="checkbox-wrapper">
+							<label for="<?php echo $term->slug ?>"><?php echo $term->name ?> <?php // echo $term->term_id ?></label>
+							<input type="checkbox" name="job_category[]" id="<?php echo $term->slug ?>" value="<?php echo $term->slug ?>">
+						</div>
+
+
+						<?php
 					}
-				} ?>
-			</textarea>
+				}
+		 		?>
 
-			</div>
+		 		<div style="clear: both;"></div>
+
+		 		<div style="padding-top: 5px;">
+
+				<!-- *job description | post content -->
+				<label for="job_description">Job Description:*</label>
+				<textarea name="job_description" id="job_description">
+					<?php
+					if (isset( $_POST['job_description'])) {
+						if (function_exists('stripslashes')) {
+							// echo stripslashes( $_POST['job_description'] );
+							echo wp_strip_all_tags( $_POST['job_description'], true );
+						} else {
+							echo $_POST['job_description'];
+						}
+					} ?>
+				</textarea>
+
+				</div>
 
 
-			<h3>Billing Information:</h3>
+				<h3>Billing Information:</h3>
 
-			<!-- billing name | meta -->
-			<label for="billing_name">Billing Contact Name:*</label>
-			<input type="text" name="billing_name" id="billing_name" class="required"
-						 value="<?php	echo $_POST['billing_name']; ?>" size=60><br>
+				<!-- billing name | meta -->
+				<label for="billing_name">Billing Contact Name:*</label>
+				<input type="text" name="billing_name" id="billing_name" class="required"
+							 value="<?php	echo $_POST['billing_name']; ?>" size=60><br>
 
-			<!-- billing email | meta -->
-			<label for="billing_email">Email address of billing contact:*</label>
-			<input type="text" name="billing_email" id="billing_email" class="required"
-						 value="<?php	echo $_POST['billing_email']; ?>" size=60><br>
+				<!-- billing email | meta -->
+				<label for="billing_email">Email address of billing contact:*</label>
+				<input type="text" name="billing_email" id="billing_email" class="required"
+							 value="<?php	echo $_POST['billing_email']; ?>" size=60><br>
 
-			<!-- billing address | meta -->
-			<label for="billing_address">Billing Contact Address:</label>
-			<input type="text" name="billing_address" id="billing_address"
-						 value="<?php	echo $_POST['billing_address']; ?>" size=60><br>
+				<!-- billing address | meta -->
+				<label for="billing_address">Billing Contact Address:</label>
+				<input type="text" name="billing_address" id="billing_address"
+							 value="<?php	echo $_POST['billing_address']; ?>" size=60><br>
 
-			<!-- billing phone | meta -->
-			<label for="billing_phone">Billing Contact Phone:</label>
-			<input type="text" name="billing_phone" id="billing_phone"
-						 value="<?php	echo $_POST['billing_phone']; ?>" size=60><br>
+				<!-- billing phone | meta -->
+				<label for="billing_phone">Billing Contact Phone:</label>
+				<input type="text" name="billing_phone" id="billing_phone"
+							 value="<?php	echo $_POST['billing_phone']; ?>" size=60><br>
 
-			<!-- submit btn -->
-			<input type="hidden" name="submitted" id="submitted" value="true" />
-			<button type="submit", class="submit">Submit</button>
-
-	  </form>
-	 </section>
+				<!-- submit btn -->
+				<input type="hidden" name="submitted" id="submitted" value="true" />
+				<button type="submit", class="submit">Submit</button>
+		</div>
+	</form>
+	</section>
 	 </section>
 
 	</main><!-- .site-main -->

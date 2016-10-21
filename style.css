@@ -1431,13 +1431,16 @@ a:hover, a:active {
 #jobs-page #section-2-show #job-forms h3, #jobs-page #section-2-show #new-member-submission-form h3, #jobs-page #section-2-show #member-renewal-submission-form h3 {
   text-align: center;
 }
+#jobs-page #section-2-show #job-forms p, #jobs-page #section-2-show #new-member-submission-form p, #jobs-page #section-2-show #member-renewal-submission-form p {
+  font-size: 14px;
+}
 #jobs-page #section-2-show #job-forms label, #jobs-page #section-2-show #new-member-submission-form label, #jobs-page #section-2-show #member-renewal-submission-form label {
   display: block;
   padding-bottom: 5px;
 }
 #jobs-page #section-2-show #job-forms input, #jobs-page #section-2-show #new-member-submission-form input, #jobs-page #section-2-show #member-renewal-submission-form input, #jobs-page #section-2-show #job-forms textarea, #jobs-page #section-2-show #new-member-submission-form textarea, #jobs-page #section-2-show #member-renewal-submission-form textarea, #jobs-page #section-2-show #job-forms select, #jobs-page #section-2-show #new-member-submission-form select, #jobs-page #section-2-show #member-renewal-submission-form select {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 5px 10px;
 }
 #jobs-page #section-2-show #job-forms select, #jobs-page #section-2-show #new-member-submission-form select, #jobs-page #section-2-show #member-renewal-submission-form select {
