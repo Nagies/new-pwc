@@ -1380,7 +1380,10 @@ a:hover, a:active {
 #jobs-page #section-2 .text-wrap .jobs-cta {
   color: #e85a71;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  margin: 10px 0;
+  display: block;
+  text-align: center;
 }
 #jobs-page #section-2 .text-wrap .job {
   width: 100%;

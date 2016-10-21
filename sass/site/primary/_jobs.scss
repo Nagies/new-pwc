@@ -96,7 +96,10 @@
 			.jobs-cta {
 				color: $red;
 				text-decoration: none;
-				font-size: 16px;
+				font-size: 14px;
+				margin: 10px 0;
+				display: block; 
+				text-align: center;
 			}
 
 			.job {

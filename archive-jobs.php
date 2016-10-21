@@ -50,9 +50,9 @@ get_header(); ?>
 					?>
 
             <!-- "Submit a Job" link: -->
-            <p>
+           
               <a href="<?php echo get_site_url(); ?>/submit-job/", class="jobs-cta">Click here to submit a job/contract >> </a>
-            </p>
+            
 
 
 
