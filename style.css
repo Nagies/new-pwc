@@ -472,7 +472,6 @@ a:hover, a:active {
   right: 0;
   background: transparent;
   z-index: 500;
-  padding-top: 15px;
 }
 #masthead .nav-left {
   float: left;
@@ -1309,7 +1308,7 @@ a:hover, a:active {
   text-align: left;
 }
 #jobs-page #section-1 {
-  height: 75px;
+  height: 85px;
   background: #145268;
 }
 #jobs-page #section-1 .text-wrapper {
