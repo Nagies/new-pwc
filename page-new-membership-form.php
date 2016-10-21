@@ -153,6 +153,8 @@ if ( $wp_error ) {
 
   <form id="new-member-submission-form" class="" method="post">
 
+  	<h1 class="center">New Membership</h1>
+
 
 		<!-- member name | post title -->
 		<label for="member_name">Name:</label>

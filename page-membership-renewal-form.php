@@ -76,6 +76,8 @@ if ( $new_post_id ) {
 
     <form id="member-renewal-submission-form" class="" method="post">
 
+    	<h1 class="center">Renew Membership</h1>
+
 			<!-- member name | post title -->
 			<label for="member_name">Name:*</label>
 			<input type="text" name="member_name" id="member_name"
@@ -132,7 +134,7 @@ if ( $new_post_id ) {
 
 			<!-- submit btn -->
 			<input type="hidden" name="submitted" id="submitted" value="true" />
-			<button type="submit">Submit</button>
+			<button type="submit" class="submit">Submit</button>
 
 
 

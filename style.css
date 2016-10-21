@@ -1363,7 +1363,7 @@ a:hover, a:active {
   display: block;
 }
 #jobs-page #section-2 .text-wrap {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 50px auto;
 }
 #jobs-page #section-2 .text-wrap .jobs-main-header {
@@ -1421,6 +1421,9 @@ a:hover, a:active {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 15px;
+}
+#jobs-page #section-2-show #job-forms .center, #jobs-page #section-2-show #new-member-submission-form .center, #jobs-page #section-2-show #member-renewal-submission-form .center {
+  text-align: center;
 }
 #jobs-page #section-2-show #job-forms h3, #jobs-page #section-2-show #new-member-submission-form h3, #jobs-page #section-2-show #member-renewal-submission-form h3 {
   text-align: center;
