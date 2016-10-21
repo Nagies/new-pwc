@@ -55,7 +55,7 @@ get_header(); ?>
             
 
 
-
+          <div class="job-container">
             <!-- jobs cpts loop: -->
             <?php if ( have_posts() ) : ?>
 
@@ -83,24 +83,25 @@ get_header(); ?>
                   ?>
 
 
-                  
-                  <div class="job">
-                    <h3>
-                      <a href="<?php echo $jobURL ?>"><?php echo $jobTitle; ?></a>
-                    </h3>
+                 
+                    <div class="job">
+                      <h3>
+                        <a href="<?php echo $jobURL ?>"><?php echo $jobTitle; ?></a>
+                      </h3>
 
-                    <?php if ($formattedJobPostDate) { ?>
-                      <p>Posted on: <?php echo $formattedJobPostDate; ?></p>
-                    <?php } ?>
+                      <?php if ($formattedJobPostDate) { ?>
+                        <p>Posted on: <?php echo $formattedJobPostDate; ?></p>
+                      <?php } ?>
 
-                    <?php if ($jobCompany) { ?>
-                      <p>Company: <?php echo $jobCompany; ?></p>
-                    <?php } ?>
+                      <?php if ($jobCompany) { ?>
+                        <p>Company: <?php echo $jobCompany; ?></p>
+                      <?php } ?>
 
-                    <?php if ($jobLocation) { ?>
-                      <p>Location: <?php echo $jobLocation; ?></p>
-                    <?php } ?>
-                  </div>
+                      <?php if ($jobLocation) { ?>
+                        <p>Location: <?php echo $jobLocation; ?></p>
+                      <?php } ?>
+                    </div>
+                   
 
                   <?php
                 } ?>
@@ -113,7 +114,7 @@ get_header(); ?>
               <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
             <?php endif; ?>
-
+         </div>
       </section>
 
     </main><!-- #main -->

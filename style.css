@@ -1364,7 +1364,7 @@ a:hover, a:active {
 }
 #jobs-page #section-2 .text-wrap {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 75px auto;
 }
 #jobs-page #section-2 .text-wrap .jobs-main-header {
   text-align: center;
@@ -1385,21 +1385,21 @@ a:hover, a:active {
   display: block;
   text-align: center;
 }
-#jobs-page #section-2 .text-wrap .job {
+#jobs-page #section-2 .text-wrap .job-container .job {
   width: 100%;
   display: block;
   margin: 20px 0;
 }
-#jobs-page #section-2 .text-wrap .job h3 {
+#jobs-page #section-2 .text-wrap .job-container .job h3 {
   margin: 0;
   padding: 0;
   font-size: 20px;
 }
-#jobs-page #section-2 .text-wrap .job h3 a {
+#jobs-page #section-2 .text-wrap .job-container .job h3 a {
   text-decoration: none;
   color: #145268;
 }
-#jobs-page #section-2 .text-wrap .job p {
+#jobs-page #section-2 .text-wrap .job-container .job p {
   line-height: 24px;
   padding: 0;
   margin: 0;
