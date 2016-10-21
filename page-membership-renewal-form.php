@@ -6,7 +6,6 @@
 // Pulling content from old template: http://pwcusa.org/membership-renewal.php
 ?>
 
-<h1>Membership Renewal Application</h1>
 
 <?php global $post; ?>
 
@@ -65,15 +64,15 @@ if ( $new_post_id ) {
 
 
 <?php get_header(); ?>
-
-<h2>*Reading from page-membership-renewal-form.php*</h2>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-    Please complete the form below and then click the Submit button at the bottom of the page.
-    Note: Credit cards accepted through PayPal for payment of dues.
-    Fields marked * are required.
+		<div id="jobs-page">
+			<div id="section-1-show">
+				
+			</div>
 
-  	<hr>
+			<div id="section-2-show">
+			
 
     <form id="member-renewal-submission-form" class="" method="post">
 
@@ -100,11 +99,11 @@ if ( $new_post_id ) {
 		  <!-- home email | meta -->
 			<label for="home_email">Home email:</label>
 			<input type="text" name="home_email" id="home_email"
-						 value="" size=60><br><br>
+						 value="" size=60><br>
 
 			<!-- chapter_preference | taxonomy 'chapter' -->
 			<b><label for="chapter_preference">Chapter Preference*:</label></b><br>
-			<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span><br><br>
+			<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span><br>
 			<input type="radio" name="chapter_preference" value="new-york">New York <br>
 			<input type="radio" name="chapter_preference" value="new-jersey">New Jersey <br>
 			<input type="radio" name="chapter_preference" value="connecticut">Connecticut <br>
@@ -138,7 +137,8 @@ if ( $new_post_id ) {
 
 
     </form>
-
+    </div>
+	</div>
   </main><!-- .site-main -->
 </div><!-- .content-area -->
 
