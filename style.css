@@ -815,7 +815,7 @@ a:hover, a:active {
   font-size: 14px;
 }
 #index-page #section-1 .text-wrap .buttons-wrapper a button:hover {
-  opacity: 0.9;
+  opacity: 0.75;
 }
 #index-page #section-1 .text-wrap .buttons-wrapper a button.trans {
   background: transparent;
@@ -848,7 +848,15 @@ a:hover, a:active {
   width: 33.33333%;
   height: 100%;
   text-align: center;
-  padding: 0 20px;
+}
+#index-page #section-2 .icons-wrapper .icon.pad-right {
+  padding-right: 10px;
+}
+#index-page #section-2 .icons-wrapper .icon.pad-sides {
+  padding: 0 10px;
+}
+#index-page #section-2 .icons-wrapper .icon.pad-left {
+  padding-left: 10px;
 }
 #index-page #section-2 .icons-wrapper .icon .inner {
   padding: 0 5px;
@@ -865,7 +873,7 @@ a:hover, a:active {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  height: 75px;
+  height: 65px;
 }
 #index-page #section-2 .icons-wrapper .icon .inner a {
   text-decoration: none;
@@ -917,8 +925,8 @@ a:hover, a:active {
   width: 33.33333%;
 }
 #index-page #section-3 .inner-wrapper .we-wrapper .we img {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: auto;
 }
 #index-page #section-3 .inner-wrapper .we-wrapper .we p, #index-page #section-3 .inner-wrapper .we-wrapper .we span {
   display: block;
@@ -967,6 +975,8 @@ a:hover, a:active {
   color: white;
   font-weight: 400;
   font-size: 30px;
+  margin-top: 0;
+  padding-top: 0;
 }
 #index-page #section-4 .text-wrapper a {
   outline: none;
@@ -981,6 +991,9 @@ a:hover, a:active {
   background: transparent;
   border: 1px solid white;
   text-decoration: none;
+}
+#index-page #section-4 .text-wrapper a:hover {
+  opacity: 0.75;
 }
 #index-page #section-5 {
   height: 400px;

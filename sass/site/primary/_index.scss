@@ -84,7 +84,7 @@
 						font-size: 14px;
 
 						&:hover {
-							opacity: 0.9;
+							opacity: 0.75;
 						}
 
 						&.trans {
@@ -129,7 +129,18 @@
 				width: 33.333333%;
 				height: 100%;
 				text-align: center;
-				padding: 0 20px;
+
+				&.pad-right {
+					padding-right: 10px;
+				}
+
+				&.pad-sides {
+					padding: 0 10px;
+				}
+
+				&.pad-left {
+					padding-left: 10px;
+				}
 
 				.inner {
 					padding: 0 5px;
@@ -148,7 +159,7 @@
 						font-weight: 400;
 						line-height: 24px;
 						text-align: left;
-						height: 75px;
+						height: 65px;
 					}
 
 					a {
@@ -241,8 +252,8 @@
 					width: 33.333333%;
 
 					img {
-						width: 100px;
-						height: 100px;
+						width: 85px;
+						height: auto;
 					}
 
 					p, span {
@@ -332,6 +343,8 @@
 					color: white;
 					font-weight: 400;
 					font-size: 30px;
+					margin-top: 0;
+					padding-top: 0;
 				}
 
 				a {
@@ -347,6 +360,10 @@
 					background: transparent;
 					border: 1px solid white;
 					text-decoration: none;
+
+					&:hover {
+						opacity: 0.75;
+					}
 				}
 			}
 
