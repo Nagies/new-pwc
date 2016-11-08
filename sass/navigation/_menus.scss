@@ -112,7 +112,7 @@
 	left: 0; 
 	right: 0;
 	background: transparent;
-	z-index: 500;
+	z-index: 1000;
 
 	.nav-left {
 		float: left;
@@ -193,12 +193,17 @@
 				margin-right: 25px;
 				font-weight: 500;
 				font-size: 15px;
-				padding-bottom: 5px;
 				transition: color 0.2s ease;
+				margin-bottom: 0;
+				padding-bottom: 0;
 
-				&:hover {
-					border-bottom: 2px solid $red;
+				a {
+					&:hover {
+						border-bottom: 1px solid $red;
+					}
 				}
+
+				
 
 
 

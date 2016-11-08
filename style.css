@@ -471,7 +471,7 @@ a:hover, a:active {
   left: 0;
   right: 0;
   background: transparent;
-  z-index: 500;
+  z-index: 1000;
 }
 #masthead .nav-left {
   float: left;
@@ -537,11 +537,12 @@ a:hover, a:active {
   margin-right: 25px;
   font-weight: 500;
   font-size: 15px;
-  padding-bottom: 5px;
   transition: color 0.2s ease;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-#masthead .main-navigation #primary-menu li:hover {
-  border-bottom: 2px solid #e85a71;
+#masthead .main-navigation #primary-menu li a:hover {
+  border-bottom: 1px solid #e85a71;
 }
 #masthead .main-navigation #primary-menu li a {
   text-decoration: none;
@@ -743,8 +744,12 @@ a:hover, a:active {
   color: #454552;
 }
 #index-page #section-1 {
-  height: 500px;
+  height: 700px;
   position: relative;
+  background-image: url(http://localhost:8888/test-wordpress/wp-content/uploads/2016/11/27107043072_a23897948d_k.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 #index-page #section-1 .overlay {
   height: 100%;
@@ -754,16 +759,21 @@ a:hover, a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 50;
+}
+#index-page #section-1 .metaslider-custom {
+  overflow: hidden;
+  height: 500px;
 }
 #index-page #section-1 .text-wrap {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 15%;
   position: absolute;
-  top: 0;
-  z-index: 50;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
 }
 #index-page #section-1 .text-wrap h1, #index-page #section-1 .text-wrap h3, #index-page #section-1 .text-wrap h5 {
   color: white;
@@ -832,7 +842,6 @@ a:hover, a:active {
   overflow: hidden;
   padding-top: 100px;
   padding-bottom: 75px;
-  border-bottom: 1px solid #ccc;
 }
 #index-page #section-2 .icons-wrapper .icon {
   float: left;
@@ -856,24 +865,24 @@ a:hover, a:active {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  height: 75px;
 }
 #index-page #section-2 .icons-wrapper .icon .inner a {
   text-decoration: none;
   color: #e85a71;
 }
-#index-page #section-3 {
-  height: 500px;
-  margin-bottom: 175px;
+#index-page #section-2 .icons-wrapper .icon .inner a:hover {
+  color: #ab1830;
 }
 #index-page #section-3 .inner-wrapper {
   width: 1100px;
   text-align: center;
-  margin: 0 auto;
+  margin: 75px auto 0;
   overflow: hidden;
+  border-bottom: 1px solid #ccc;
 }
 #index-page #section-3 .inner-wrapper h1 {
   text-align: center;
-  margin-top: 75px;
   font-size: 22px;
   font-weight: 500;
   color: #454552;
@@ -889,6 +898,9 @@ a:hover, a:active {
 #index-page #section-3 .inner-wrapper a {
   color: #e85a71;
   text-decoration: none;
+}
+#index-page #section-3 .inner-wrapper a:hover {
+  color: #ab1830;
 }
 #index-page #section-3 .inner-wrapper h3 {
   text-align: center;
@@ -910,6 +922,7 @@ a:hover, a:active {
 }
 #index-page #section-3 .inner-wrapper .we-wrapper .we p, #index-page #section-3 .inner-wrapper .we-wrapper .we span {
   display: block;
+  font-family: 'Libre Baskerville', serif !important;
 }
 #index-page #section-3 .inner-wrapper .we-wrapper .we span {
   padding-top: 15px;
@@ -923,11 +936,11 @@ a:hover, a:active {
   padding: 0;
 }
 #index-page #section-4 {
-  height: 400px;
+  height: 500px;
   width: 100%;
-  background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1460378150801-e2c95cb65a50.jpeg");
+  background-image: url(http://localhost:8888/test-wordpress/wp-content/uploads/2016/11/photo-1471109880861-75a04f9b7833.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
   position: relative;
 }
@@ -942,10 +955,13 @@ a:hover, a:active {
   background: rgba(232, 90, 113, 0.5);
 }
 #index-page #section-4 .text-wrapper {
-  position: relative;
+  position: absolute;
   z-index: 100;
-  padding-top: 100px;
   text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 100%;
 }
 #index-page #section-4 .text-wrapper h3 {
   color: white;

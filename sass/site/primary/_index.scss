@@ -5,8 +5,13 @@
 	}
 
 	#section-1 {
-		height: 500px;
+		height: 700px;
 		position: relative;
+		background-image: url(http://localhost:8888/test-wordpress/wp-content/uploads/2016/11/27107043072_a23897948d_k.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+
 
 		.overlay {
 			height: 100%;
@@ -16,17 +21,23 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: rgba(0, 0, 0, 0.10);
+			background: rgba(0, 0, 0, 0.50);
+			z-index: 50;
+		}
+
+		.metaslider-custom {
+			overflow: hidden;
+			height: 500px;
 		}
 
 		.text-wrap {
 			width: 100%;
 			margin: 0 auto;
 			text-align: center;
-			padding-top: 15%;
 			position: absolute;
-			top: 0;
-			z-index: 50;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 500;
 
 			h1, h3, h5 {
 				color: white;
@@ -112,7 +123,6 @@
 			overflow: hidden;
 			padding-top: 100px;
 			padding-bottom: 75px;
-			border-bottom: 1px solid #ccc;
 
 			.icon {
 				float: left;
@@ -138,11 +148,16 @@
 						font-weight: 400;
 						line-height: 24px;
 						text-align: left;
+						height: 75px;
 					}
 
 					a {
 						text-decoration: none; 
 						color: $red;
+
+						&:hover {
+							color: darken($red, 25%);
+						}
 					}
 				}
 			}
@@ -176,18 +191,17 @@
 	}
 
 	#section-3 {
-		height: 500px;
-		margin-bottom: 175px;
+		
 
 		.inner-wrapper {
 			width: 1100px;
 			text-align: center;
-			margin: 0 auto;
+			margin: 75px auto 0;
 			overflow: hidden;
+			border-bottom: 1px solid #ccc;
 
 			h1 {
 				text-align: center;
-				margin-top: 75px;
 				font-size: 22px;
 				font-weight: 500;
 				color: $dark;
@@ -205,6 +219,10 @@
 			a {
 				color: $red;
 				text-decoration: none;
+
+				&:hover {
+					color: darken($red, 25%);
+				}
 			}
 
 			h3 {
@@ -229,6 +247,7 @@
 
 					p, span {
 						display: block;
+						font-family: 'Libre Baskerville', serif !important;
 					}
 
 					span {
@@ -242,6 +261,10 @@
 						font-size: 18px;
 						margin: 0;
 						padding: 0;
+					}
+
+					.span-header-font {
+						
 					}
 				}
 			}
@@ -277,11 +300,11 @@
 	// }
 	
 	#section-4 {
-		height: 400px;
+		height: 500px;
 		width: 100%;
-		background-image: url("http://localhost:8888/pwc/wp-content/uploads/2016/05/photo-1460378150801-e2c95cb65a50.jpeg");
+		background-image: url(http://localhost:8888/test-wordpress/wp-content/uploads/2016/11/photo-1471109880861-75a04f9b7833.jpeg);
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100% 100%;
 		background-position: center center;
 		position: relative;
 
@@ -297,10 +320,13 @@
 		}
 
 			.text-wrapper {
-				position: relative; 
+				position: absolute; 
 				z-index: 100;
-				padding-top: 100px;
 				text-align: center;
+				top: 50%;
+				transform: translateY(-50%);
+				margin: 0 auto;
+				width: 100%;
 
 				h3 {
 					color: white;

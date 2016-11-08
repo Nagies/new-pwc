@@ -21,9 +21,7 @@ get_header(); ?>
 			<div id="index-page">
 				<section id="section-1">
 					<div class="overlay"></div>
-					<?php
-						echo do_shortcode("[metaslider id=3193 percentwidth=100]");
-					?>
+					
 					<!-- <div class="text-wrap">
 						<h1>
 							Professional Women in Construction
@@ -37,7 +35,7 @@ get_header(); ?>
 					</div> -->
 					<div class="text-wrap">
 						<h3>NATIONAL ASSOCIATION OF</h3>
-						<h1>PROFESSIONAL WOMEN IN CONSTRUCTION</h1>
+						<h1>Professional Women in Construction</h1>
 						<!-- <h5>
 							- Advancing <span>professional</span>, <span>entrepreneurial</span> and <span>managerial</span> opportunities for women and other "non-traditional" populations -
 						</h5> -->
@@ -48,6 +46,47 @@ get_header(); ?>
 							<a href="/pwc/events">
 								<button class="trans">EVENTS</button>
 							</a>
+						</div>
+					</div>
+				</section>
+
+				<section id="section-3">
+					<div class="inner-wrapper">
+						<h1>
+							Who We Are
+						</h1>
+						<p>
+							Professional Women in Construction (PWC) is a nonprofit organization committed to advancing professional, entrepreneurial and managerial opportunities for women and other "non-traditional" populations in construction and related industries.
+						</p>
+						<a href="/pwc/about" class="learn-more">Learn More >></a>
+						<div class="we-wrapper">
+							<div class="we">
+								<img src="<?php echo site_url(); ?>/wp-content/themes/pwc-underscores/images/network.png" alt="">
+								<span class="span-header-font">
+									6
+								</span>
+								<p>
+									Chapters
+								</p>
+							</div>
+							<div class="we">
+								<img src="<?php echo site_url(); ?>/wp-content/themes/pwc-underscores/images/users.png" alt="">
+								<span class="span-header-font">
+									1000
+								</span>
+								<p>
+									Members
+								</p>
+							</div>
+							<div class="we">
+								<img src="<?php echo site_url(); ?>/wp-content/themes/pwc-underscores/images/briefcase.png" alt="">
+								<span class="span-header-font">
+									800
+								</span>
+								<p>
+									Jobs
+								</p>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -68,7 +107,7 @@ get_header(); ?>
 								<p>
 									PWC is open to professional women and men, companies and public agencies in construction and allied industries.
 								</p>
-								<a href="pwc/membership">Apply for membership >></a>
+								<a href="pwc/membership">Apply for Membership >></a>
 							</div>
 						</div>
 						<div class="icon">
@@ -77,7 +116,7 @@ get_header(); ?>
 								<p>
 									PWC is a resource for design & construction firms, government agencies and recruiters.
 								</p>
-								<a href="/pwc/jobs">View or Post a job >></a>
+								<a href="/pwc/jobs">View or Post a Job >></a>
 							</div>
 						</div>
 						<div class="icon">
@@ -89,108 +128,7 @@ get_header(); ?>
 										Chelsea LeMar.
 									</span>
 								</p>
-								<a href="pwc/news-blog">Read more >></a>
-							</div>
-						</div>
-					</div>
-
-					<!-- <ul class="stately">
-				    <li data-state="al" class="al">A</li>
-				    <li data-state="ak" class="ak">B</li>
-				    <li data-state="ar" class="ar">C</li>
-				    <li data-state="az" class="az">D</li>
-				    <li data-state="ca" class="ca">E</li>
-				    <li data-state="co" class="co">F</li>
-				    <li data-state="ct" class="ct">G</li>
-				    <li data-state="de" class="de">H</li>
-				    <li data-state="dc" class="dc">I</li>
-				    <li data-state="fl" class="fl">J</li>
-				    <li data-state="ga" class="ga">K</li>
-				    <li data-state="hi" class="hi">L</li>
-				    <li data-state="id" class="id">M</li>
-				    <li data-state="il" class="il">N</li>
-				    <li data-state="in" class="in">O</li>
-				    <li data-state="ia" class="ia">P</li>
-				    <li data-state="ks" class="ks">Q</li>
-				    <li data-state="ky" class="ky">R</li>
-				    <li data-state="la" class="la">S</li>
-				    <li data-state="me" class="me">T</li>
-				    <li data-state="md" class="md">U</li>
-				    <li data-state="ma" class="ma">V</li>
-				    <li data-state="mi" class="mi">W</li>
-				    <li data-state="mn" class="mn">X</li>
-				    <li data-state="ms" class="ms">Y</li>
-				    <li data-state="mo" class="mo">Z</li>
-				    <li data-state="mt" class="mt">a</li>
-				    <li data-state="ne" class="ne">b</li>
-				    <li data-state="nv" class="nv">c</li>
-				    <li data-state="nh" class="nh">d</li>
-				    <li data-state="nj" class="nj">e</li>
-				    <li data-state="nm" class="nm">f</li>
-				    <li data-state="ny" class="ny">g</li>
-				    <li data-state="nc" class="nc">h</li>
-				    <li data-state="nd" class="nd">i</li>
-				    <li data-state="oh" class="oh">j</li>
-				    <li data-state="ok" class="ok">k</li>
-				    <li data-state="or" class="or">l</li>
-				    <li data-state="pa" class="pa">m</li>
-				    <li data-state="ri" class="ri">n</li>
-				    <li data-state="sc" class="sc">o</li>
-				    <li data-state="sd" class="sd">p</li>
-				    <li data-state="tn" class="tn">q</li>
-				    <li data-state="tx" class="tx">r</li>
-				    <li data-state="ut" class="ut">s</li>
-				    <li data-state="va" class="va">t</li>
-				    <li data-state="vt" class="vt">u</li>
-				    <li data-state="wa" class="wa">v</li>
-				    <li data-state="wv" class="wv">w</li>
-				    <li data-state="wi" class="wi">x</li>
-				    <li data-state="wy" class="wy">y</li>
-					</ul>
-					<div class="state-wrap">
-						<p>NJ</p>
-						<p>NY</p>
-						<p>CT</p>
-						<p>DC</p>
-					</div> -->
-				</section>
-
-				<section id="section-3">
-					<div class="inner-wrapper">
-						<h1>
-							WHO WE ARE
-						</h1>
-						<p>
-							Professional Women in Construction (PWC) is a nonprofit organization committed to advancing professional, entrepreneurial and managerial opportunities for women and other "non-traditional" populations in construction and related industries.
-						</p>
-						<a href="/pwc/about" class="learn-more">Learn more >></a>
-						<div class="we-wrapper">
-							<div class="we">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/pwc-underscores/images/group.svg" alt="">
-								<span>
-									6
-								</span>
-								<p>
-									Chapters
-								</p>
-							</div>
-							<div class="we">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/pwc-underscores/images/engineer.svg" alt="">
-								<span>
-									1000
-								</span>
-								<p>
-									Members
-								</p>
-							</div>
-							<div class="we">
-								<img src="<?php echo site_url(); ?>/wp-content/themes/pwc-underscores/images/id-card.svg" alt="">
-								<span>
-									800
-								</span>
-								<p>
-									Jobs
-								</p>
+								<a href="pwc/news-blog">Read More >></a>
 							</div>
 						</div>
 					</div>
@@ -200,7 +138,7 @@ get_header(); ?>
 					<div class="overlay"></div>
 						<div class="text-wrapper">
 							<h3>
-								VIEW EVENTS NEAR YOU
+								View Events Near You
 							</h3>
 							<a href="/pwc/events">
 								EVENTS
