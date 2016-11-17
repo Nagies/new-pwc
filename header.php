@@ -58,6 +58,13 @@
 				<span class="icon-twitter"></span>
 			</a> -->
 		</nav><!-- #site-navigation -->
+
+		<div class="mobile-navigation">
+			<div class="icon-wrapper">
+				<div class="icon-align-justify"></div>
+			</div>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

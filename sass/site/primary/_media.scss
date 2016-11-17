@@ -1,11 +1,60 @@
 @media all and (max-width: 50em) {
 	//Nav
 	#masthead {
-		padding: 0;
 
 		.nav-left {
+			height: 100%;
+			width: 50%;
+			text-align: center;
+
 			.site-branding {
+				width: 100%;
+				float: none;
 				margin: 0;
+			}
+		}
+
+		#site-navigation {
+			display: none;
+		}
+
+		.mobile-navigation {
+			height: 100%;
+			width: 50%;
+			float: right;
+
+			.icon-wrapper {
+				float: right;
+				padding: 30px;
+
+				.icon-align-justify {
+					color: white;
+					font-size: 24px;
+				}
+			}
+
+			.menu-main-container {
+				display: none;
+				position: relative;
+
+				.menu {
+					margin: 0;
+					padding: 10px 20px;
+					position: absolute;
+					border: 1px solid $dark;
+					background: $dark;
+					right: 30px;
+					top: 65px;
+
+					.menu-item {
+						list-style: none;
+
+						a {
+							color: white;
+							text-decoration: none;
+						}
+					}
+				}
 			}
 		}
 	}

@@ -2263,11 +2263,51 @@ a:hover, a:active {
   padding-right: 10px;
 }
 @media all and (max-width: 50em) {
-  #masthead {
-    padding: 0;
+  #masthead .nav-left {
+    height: 100%;
+    width: 50%;
+    text-align: center;
   }
   #masthead .nav-left .site-branding {
+    width: 100%;
+    float: none;
     margin: 0;
+  }
+  #masthead #site-navigation {
+    display: none;
+  }
+  #masthead .mobile-navigation {
+    height: 100%;
+    width: 50%;
+    float: right;
+  }
+  #masthead .mobile-navigation .icon-wrapper {
+    float: right;
+    padding: 30px;
+  }
+  #masthead .mobile-navigation .icon-wrapper .icon-align-justify {
+    color: white;
+    font-size: 24px;
+  }
+  #masthead .mobile-navigation .menu-main-container {
+    display: none;
+    position: relative;
+  }
+  #masthead .mobile-navigation .menu-main-container .menu {
+    margin: 0;
+    padding: 10px 20px;
+    position: absolute;
+    border: 1px solid #454552;
+    background: #454552;
+    right: 30px;
+    top: 65px;
+  }
+  #masthead .mobile-navigation .menu-main-container .menu .menu-item {
+    list-style: none;
+  }
+  #masthead .mobile-navigation .menu-main-container .menu .menu-item a {
+    color: white;
+    text-decoration: none;
   }
 }
 #news-page h1 {
