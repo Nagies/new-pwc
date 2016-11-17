@@ -300,6 +300,7 @@ h1, h3, h5 {
 }
 p, span, label, a {
   font-family: 'PT Sans', sans-serif !important;
+  letter-spacing: 1px !important;
 }
 blockquote, q {
   quotes: "" "";
@@ -572,6 +573,9 @@ a:hover, a:active {
 }
 .site-footer .site-info {
   overflow: hidden;
+  padding: 0 5%;
+  width: 100%;
+  height: 100%;
 }
 .site-footer .site-info .left-foot {
   width: 50%;
@@ -649,6 +653,67 @@ a:hover, a:active {
 .site-footer .site-info .right-foot h1 {
   float: right;
   color: white;
+}
+.site-footer .site-info .footer {
+  float: left;
+  width: 33.33333%;
+  height: 100%;
+}
+.site-footer .site-info .footer.left {
+  text-align: center;
+  display: table;
+}
+.site-footer .site-info .footer.left .footer-left-link {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+.site-footer .site-info .footer.left .footer-left-link .footer-left-header {
+  margin: 0;
+  padding: 0;
+}
+.site-footer .site-info .footer.center {
+  text-align: center;
+  display: table;
+}
+.site-footer .site-info .footer.center .footer-site-map {
+  display: table-cell;
+  vertical-align: middle;
+}
+.site-footer .site-info .footer.center .footer-site-map .site-map-links {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.site-footer .site-info .footer.center .footer-site-map .site-map-links:hover {
+  text-decoration: underline;
+}
+.site-footer .site-info .footer.right {
+  text-align: center;
+  display: table;
+}
+.site-footer .site-info .footer.right .footer-more-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+.site-footer .site-info .footer.right .footer-more-info span, .site-footer .site-info .footer.right .footer-more-info p {
+  margin: 0;
+  padding: 0;
+}
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper {
+  overflow: hidden;
+}
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper .info-left {
+  float: left;
+  width: 50%;
+}
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper .info-right {
+  float: right;
+  width: 50%;
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);

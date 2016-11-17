@@ -4,6 +4,9 @@
 
 	.site-info {
 		overflow: hidden;
+		padding: 0 5%;
+		width: 100%;
+		height: 100%;
 
 		.left-foot {
 			width: 50%;
@@ -100,6 +103,83 @@
 			// #logo {
 			// 	float: right;
 			// }
+		}
+
+		
+		//Updated Footer
+		.footer {
+			float: left;
+			width: 33.333333%;
+			height: 100%;
+
+			&.left {
+				text-align: center; 
+				display: table;
+
+				.footer-left-link {
+					display: inline-block;
+					text-decoration: none;
+					width: 100%;
+					color: white;
+					display: table-cell;
+					vertical-align: middle;
+
+					.footer-left-header {
+						margin: 0; 
+						padding: 0;
+					}
+				}
+			}
+
+			&.center {
+				text-align: center; 
+				display: table;
+
+				.footer-site-map {
+					display: table-cell;
+					vertical-align: middle;
+
+					.site-map-links {
+						display: block;
+						color: white;
+						text-decoration: none;
+						padding: 5px 0;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			&.right {
+				text-align: center;
+				display: table;
+				
+				.footer-more-info {
+					display: table-cell;
+					vertical-align: middle;
+
+					span, p {
+						margin: 0;
+						padding: 0;
+					}
+
+					.info-wrapper {
+						overflow: hidden;
+
+						.info-left {
+							float: left;
+							width: 50%;
+						}
+
+						.info-right {
+							float: right;
+							width: 50%;
+						}
+					}
+				}
+			}
 		}
 	}
 }

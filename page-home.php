@@ -103,7 +103,7 @@ get_header(); ?>
 					<div class="icons-wrapper">
 						<div class="icon pad-right">
 							<div class="inner">
-								<img src="http://pwc.lizaramo.com/wp-content/uploads/2016/09/photo-1458400411386-5ae465c4e57e-1.jpeg" alt="">
+								<img src="http://placehold.it/350x150" alt="">
 								<p>
 									PWC is open to professional women and men, companies and public agencies in construction and allied industries.
 								</p>
@@ -112,7 +112,7 @@ get_header(); ?>
 						</div>
 						<div class="icon pad-sides">
 							<div class="inner">
-								<img src="http://pwc.lizaramo.com/wp-content/uploads/2016/09/photo-1452827073306-6e6e661baf57-1.jpeg" alt="">
+								<img src="http://placehold.it/350x150" alt="">
 								<p>
 									PWC is a resource for design & construction firms, government agencies and recruiters.
 								</p>
