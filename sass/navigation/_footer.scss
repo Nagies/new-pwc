@@ -1,10 +1,9 @@
 .site-footer {
 	background: #32373C;
-	height: 225px;
+	height: 250px;
 
 	.site-info {
 		overflow: hidden;
-		padding: 0 5%;
 		width: 100%;
 		height: 100%;
 
@@ -134,19 +133,24 @@
 			&.center {
 				text-align: center; 
 				display: table;
-
+				
 				.footer-site-map {
 					display: table-cell;
 					vertical-align: middle;
+					
+					.borders {
+						border-left: 1px solid #ccc;
+						border-right: 1px solid #ccc;
 
-					.site-map-links {
-						display: block;
-						color: white;
-						text-decoration: none;
-						padding: 5px 0;
+						.site-map-links {
+							display: block;
+							color: white;
+							text-decoration: none;
+							padding: 5px 0;
 
-						&:hover {
-							text-decoration: underline;
+							&:hover {
+								text-decoration: underline;
+							}
 						}
 					}
 				}
@@ -167,15 +171,26 @@
 
 					.info-wrapper {
 						overflow: hidden;
+						margin: 20px 0;
 
-						.info-left {
-							float: left;
-							width: 50%;
+						.icon-phone, .icon-location {
+							color: $red;
 						}
 
-						.info-right {
-							float: right;
-							width: 50%;
+						p {
+							color: white;
+						}
+		
+
+						a {
+							text-decoration: none;
+							color: white;
+							display: inline-block;
+							margin: 0 5px;
+
+							&:hover {
+								text-decoration: underline;
+							}
 						}
 					}
 				}

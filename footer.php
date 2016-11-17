@@ -24,11 +24,13 @@
 
 			<div class="footer center">
 				<div class="footer-site-map">
-					<a href="/about" class="site-map-links">About</a>
-					<a href="/events" class="site-map-links">Events</a>
-					<a href="/news" class="site-map-links">News</a>
-					<a href="/jobs" class="site-map-links">Jobs</a>
-					<a href="/membership" class="site-map-links">Membership</a>
+					<div class="borders">
+						<a href="/about" class="site-map-links">About</a>
+						<a href="/events" class="site-map-links">Events</a>
+						<a href="/news" class="site-map-links">News</a>
+						<a href="/jobs" class="site-map-links">Jobs</a>
+						<a href="/membership" class="site-map-links">Membership</a>
+					</div>
 				</div>
 			</div>
 
@@ -37,18 +39,12 @@
 					<div class="info-wrapper">
 						<div class="info-left">
 							<span class="icon-location"></span>
-							<p class="inline">
-								Location
-							</p>
 						</div>
 						<div class="info-right">
 							<p>
 								1001 Avenue of the Americas 
-							</p>
-							<p>
 								Suite 405 
-							</p>
-							<p>
+								<br>
 								New York, NY 10018
 							</p>
 						</div>
@@ -56,9 +52,6 @@
 					<div class="info-wrapper">
 						<div class="info-left">
 							<span class="icon-phone"></span>
-							<p class="inline">
-								Telephone
-							</p>
 						</div>
 						<div class="info-right">
 							<p>
@@ -67,12 +60,14 @@
 						</div>
 					</div>
 						<div class="info-wrapper">
-							<a href="https://www.facebook.com/pwcusa/" target="_blank">
-								<span class="icon-facebook"></span>
-							</a>
-							<a href="https://twitter.com/pwctalk" target="_blank">
-								<span class="icon-twitter"></span>
-							</a>
+							<div class="info-right">
+								<a href="https://www.facebook.com/pwcusa/" target="_blank">
+									<span class="icon-facebook"></span>
+								</a>
+								<a href="https://twitter.com/pwctalk" target="_blank">
+									<span class="icon-twitter"></span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

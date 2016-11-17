@@ -569,11 +569,10 @@ a:hover, a:active {
 }
 .site-footer {
   background: #32373c;
-  height: 225px;
+  height: 250px;
 }
 .site-footer .site-info {
   overflow: hidden;
-  padding: 0 5%;
   width: 100%;
   height: 100%;
 }
@@ -683,13 +682,17 @@ a:hover, a:active {
   display: table-cell;
   vertical-align: middle;
 }
-.site-footer .site-info .footer.center .footer-site-map .site-map-links {
+.site-footer .site-info .footer.center .footer-site-map .borders {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.site-footer .site-info .footer.center .footer-site-map .borders .site-map-links {
   display: block;
   color: white;
   text-decoration: none;
   padding: 5px 0;
 }
-.site-footer .site-info .footer.center .footer-site-map .site-map-links:hover {
+.site-footer .site-info .footer.center .footer-site-map .borders .site-map-links:hover {
   text-decoration: underline;
 }
 .site-footer .site-info .footer.right {
@@ -706,14 +709,22 @@ a:hover, a:active {
 }
 .site-footer .site-info .footer.right .footer-more-info .info-wrapper {
   overflow: hidden;
+  margin: 20px 0;
 }
-.site-footer .site-info .footer.right .footer-more-info .info-wrapper .info-left {
-  float: left;
-  width: 50%;
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper .icon-phone, .site-footer .site-info .footer.right .footer-more-info .info-wrapper .icon-location {
+  color: #e85a71;
 }
-.site-footer .site-info .footer.right .footer-more-info .info-wrapper .info-right {
-  float: right;
-  width: 50%;
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper p {
+  color: white;
+}
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 0 5px;
+}
+.site-footer .site-info .footer.right .footer-more-info .info-wrapper a:hover {
+  text-decoration: underline;
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
