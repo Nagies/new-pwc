@@ -72,6 +72,10 @@
 				max-width: 500px;
 				text-align: left;
 
+				// .side-menu-header {
+				// 	font-size: 22px;
+				// }
+
 				.side_menu_class {
 					ul {
 						list-style: none;
@@ -87,10 +91,9 @@
 							a {
 								text-decoration: none;
 								color: $dark;
-								font-weight: 300;
 								padding: 0;
 								margin: 5px 0;
-								font-size: 20px;
+								font-size: 18px;
 
 								&.active {
 									font-weight: 600;

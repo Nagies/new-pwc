@@ -474,6 +474,9 @@ a:hover, a:active {
   background: transparent;
   z-index: 1000;
 }
+#masthead .mobile-navigation {
+  display: none;
+}
 #masthead .nav-left {
   float: left;
 }
@@ -490,6 +493,9 @@ a:hover, a:active {
 #masthead .nav-left .site-branding {
   float: left;
   margin-left: 7rem;
+}
+#masthead .nav-left .site-branding .site-title {
+  display: none;
 }
 #masthead .nav-left .site-branding h1 {
   color: white;
@@ -529,10 +535,13 @@ a:hover, a:active {
 }
 #masthead .main-navigation {
   float: right;
-  width: 30%;
+  width: 50%;
   clear: none;
   margin-top: 35px;
   margin-right: 30px;
+}
+#masthead .main-navigation #primary-menu {
+  float: right;
 }
 #masthead .main-navigation #primary-menu li {
   margin-right: 25px;
@@ -1168,10 +1177,9 @@ a:hover, a:active {
 #about-page #section-2 .about-container .side-menu .side_menu_class ul li a {
   text-decoration: none;
   color: #454552;
-  font-weight: 300;
   padding: 0;
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 #about-page #section-2 .about-container .side-menu .side_menu_class ul li a.active {
   font-weight: 600;
@@ -2262,7 +2270,7 @@ a:hover, a:active {
   font-size: 30px;
   padding-right: 10px;
 }
-@media all and (max-width: 50em) {
+@media all and (max-width: 50rem) {
   #masthead .nav-left {
     height: 100%;
     width: 50%;
@@ -2280,10 +2288,12 @@ a:hover, a:active {
     height: 100%;
     width: 50%;
     float: right;
+    display: block;
   }
   #masthead .mobile-navigation .icon-wrapper {
     float: right;
     padding: 30px;
+    cursor: pointer;
   }
   #masthead .mobile-navigation .icon-wrapper .icon-align-justify {
     color: white;
@@ -2301,12 +2311,76 @@ a:hover, a:active {
     background: #454552;
     right: 30px;
     top: 65px;
+    width: 150px;
   }
   #masthead .mobile-navigation .menu-main-container .menu .menu-item {
     list-style: none;
   }
   #masthead .mobile-navigation .menu-main-container .menu .menu-item a {
     color: white;
+    text-decoration: none;
+  }
+  #index-page #section-1 .text-wrap {
+    padding: 0 10px;
+  }
+  #index-page #section-1 .text-wrap h3 {
+    font-size: 16px;
+  }
+  #index-page #section-1 .text-wrap h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  #index-page #section-1 .buttons-wrapper {
+    margin: 20px 0 !important;
+  }
+  #index-page #section-1 .buttons-wrapper a {
+    display: block;
+    margin: 10px 0;
+  }
+  #index-page #section-3 .inner-wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+    padding: 0 10px;
+    border-bottom: none;
+  }
+  #index-page #section-3 .inner-wrapper .we-wrapper {
+    width: 100%;
+    margin: 55px auto 0;
+  }
+  #index-page #section-3 .inner-wrapper .we-wrapper .we {
+    float: none;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #index-page #section-3 .inner-wrapper .we-wrapper .we img {
+    width: 75px;
+  }
+  #index-page #section-3 .inner-wrapper .we-wrapper .we span {
+    font-size: 30px;
+  }
+  #index-page #section-3 .inner-wrapper .we-wrapper .we p {
+    font-size: 16px;
+  }
+  #index-page #section-2 .icons-wrapper {
+    padding: 0;
+  }
+  #index-page #section-2 .icons-wrapper .icon {
+    float: none;
+    width: 100%;
+    padding: 0 10px !important;
+    margin-bottom: 40px;
+  }
+  .site-footer {
+    height: auto !important;
+  }
+  .site-footer .site-info {
+    overflow: visible !important;
+  }
+  .site-footer .site-info .footer {
+    width: 100% !important;
+    float: none !important;
+  }
+  .site-footer .site-info .footer .info-wrapper a:hover {
     text-decoration: none;
   }
 }

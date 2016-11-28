@@ -40,10 +40,10 @@ get_header(); ?>
 							- Advancing <span>professional</span>, <span>entrepreneurial</span> and <span>managerial</span> opportunities for women and other "non-traditional" populations -
 						</h5> -->
 						<div class="buttons-wrapper">
-							<a href="/pwc/membership">
+							<a href="/membership">
 								<button>JOIN US</button>
 							</a>
-							<a href="/pwc/events">
+							<a href="/events">
 								<button class="trans">EVENTS</button>
 							</a>
 						</div>

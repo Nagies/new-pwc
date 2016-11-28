@@ -6,7 +6,6 @@ jQuery(document).ready(function() {
   //Mobile menu stuff
   jQuery("body").on("click", ".mobile-navigation .icon-wrapper", function(){
   	jQuery(this).next().toggle();
-
   });
 
 });

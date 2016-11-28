@@ -1,4 +1,4 @@
-@media all and (max-width: 50em) {
+@media all and (max-width: 50rem) {
 	//Nav
 	#masthead {
 
@@ -22,10 +22,12 @@
 			height: 100%;
 			width: 50%;
 			float: right;
+			display: block;
 
 			.icon-wrapper {
 				float: right;
 				padding: 30px;
+				cursor: pointer;
 
 				.icon-align-justify {
 					color: white;
@@ -45,6 +47,7 @@
 					background: $dark;
 					right: 30px;
 					top: 65px;
+					width: 150px;
 
 					.menu-item {
 						list-style: none;
@@ -58,5 +61,120 @@
 			}
 		}
 	}
+
+	//Home page
+	#index-page {
+		#section-1 {
+			.text-wrap {
+				padding: 0 10px;
+
+				h3 {
+					font-size: 16px;
+				}
+
+				h1 {
+					font-size: 30px;
+					margin: 10px 0;
+				}
+			}
+
+			.buttons-wrapper {
+				margin: 20px 0 !important;
+
+				a {
+					display: block;
+					margin: 10px 0;
+				}
+			}
+		}
+
+		#section-3 {
+			.inner-wrapper {
+				margin: 50px auto 0;
+				width: 100%;
+				padding: 0 10px;
+				border-bottom: none;
+
+				.we-wrapper {
+					width: 100%;
+					margin: 55px auto 0;
+
+					.we {
+						float: none;
+						width: 100%;
+						padding-bottom: 50px;
+
+						img {
+							width: 75px;
+						}
+
+						span {
+							font-size: 30px;
+						}
+
+						p {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+
+		#section-2 {
+			.icons-wrapper {
+				padding: 0;
+
+				.icon {
+					float: none;
+					width: 100%;
+					padding: 0 10px !important;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+
+	//About
+	#about-page {
+		#section-2 {
+			
+		}
+	}
+
+	//Footer
+	.site-footer {
+		height: auto !important;
+
+		.site-info {
+			overflow: visible !important;
+
+			.footer {
+				width: 100% !important;
+				float: none !important;
+
+				.info-wrapper {
+					a {
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

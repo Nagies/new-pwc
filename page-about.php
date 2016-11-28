@@ -22,7 +22,7 @@ get_header();
 				<section id="section-1">
 					<div class="overlay"></div>
 					<div class="text-wrapper">
-						<h1>WHO WE ARE</h1>
+						<h1>Who We Are</h1>
 					</div>
 				</section>
 				<section id="section-2">
@@ -30,7 +30,7 @@ get_header();
 
 					<div class="side-menu">
 						
-						<h1>
+						<h1 class="side-menu-header">
 							About
 						</h1>
 
@@ -39,7 +39,7 @@ get_header();
 					</div>
 					<div class="text-wrapper">
 						<h1>
-							ABOUT PWC
+							About Us
 						</h1>
 
 						<p>
@@ -49,7 +49,7 @@ get_header();
 						<!-- <div class="divider"></div> -->
 
 						<h1>
-							MEMBERS
+							Members
 						</h1>
 
 						<p>
@@ -58,7 +58,7 @@ get_header();
 
 						<!-- <div class="divider"></div> -->
 						<h1>
-							SUPPORTERS
+							Supporters
 						</h1>
 
 						<p>
@@ -67,7 +67,7 @@ get_header();
 
 						<!-- <div class="divider"></div> -->
 						<h1>
-							ADVOCATE FOR WOMAN + MINORITY-OWNED FIRMS
+							Advocate for Women + minority-owned firms
 						</h1>
 
 						<p class="m-bottom">
