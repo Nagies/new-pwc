@@ -34,25 +34,29 @@ get_header(); ?>
 					<div class="center-wrapper">
 				  	<div class="membership-wrapper new">
 							<div class="membership">
-								<h1>
-									Apply for a new membership
-								</h1>
-								<div class="buttons">
-									<a href=" <?php echo site_url( 'new-membership-application/' ); ?> ", class="button">View Web</a>
-									<!-- <a href="http://pwcusa.org/membership.php", class="button">View Web</a> -->
-									<a href="http://www.pwcusa.org/chapter-specific/NY01/downloads/PWC_AppForm.pdf", class="button fill">Via post mail</a>
+								<div class="membership-text-wrapper">
+									<h1 class="black">
+										Apply for a new membership
+									</h1>
+									<div class="buttons">
+										<a href=" <?php echo site_url( 'new-membership-application/' ); ?> ", class="button fill">View Web</a>
+										<!-- <a href="http://pwcusa.org/membership.php", class="button">View Web</a> -->
+										<a href="http://www.pwcusa.org/chapter-specific/NY01/downloads/PWC_AppForm.pdf", class="button dark">Via post mail</a>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="membership-wrapper renew">
 							<div class="membership">
-								<h1>
-									Renew an existing membership
-								</h1>
-								<div class="buttons">
-									<a href=" <?php echo site_url( 'membership-renewal-application/' ); ?> ", class="button">View Web</a>
-									<!-- <a href="http://pwcusa.org/membership-renewal.php" class="button">View Web</a> -->
-									<a href="http://www.pwcusa.org/chapter-specific/NY01/downloads/PWC_RenewalForm.pdf" class="button fill">Via post mail</a>
+								<div class="membership-text-wrapper">
+									<h1>
+										Renew an existing membership
+									</h1>
+									<div class="buttons">
+										<a href=" <?php echo site_url( 'membership-renewal-application/' ); ?> ", class="button fill">View Web</a>
+										<!-- <a href="http://pwcusa.org/membership-renewal.php" class="button">View Web</a> -->
+										<a href="http://www.pwcusa.org/chapter-specific/NY01/downloads/PWC_RenewalForm.pdf" class="button">Via post mail</a>
+									</div>
 								</div>
 							</div>
 						</div>

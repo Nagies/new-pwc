@@ -31,7 +31,7 @@
 		<div class="nav-left">
 			<div class="site-branding">
 				<a href="<?php echo esc_url( home_url( '/home' ) ); ?>">
-					<h1>PWC</h1>
+					<h1 class="site-branding-header">PWC</h1>
 				</a>
 				<a href="/pwc">
 					<?php if ( is_front_page() && is_home() ) : ?>

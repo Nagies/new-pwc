@@ -1678,8 +1678,9 @@ a:hover, a:active {
 #membership-page #section-2 .center-wrapper .membership-wrapper {
   float: left;
   width: 50%;
-  height: 600px;
+  height: 650px;
   text-align: center;
+  position: relative;
 }
 #membership-page #section-2 .center-wrapper .membership-wrapper.new {
   background-image: url("images/textured-bg.png");
@@ -1690,19 +1691,32 @@ a:hover, a:active {
 #membership-page #section-2 .center-wrapper .membership-wrapper .membership {
   height: 100%;
   width: 100%;
-  position: relative;
-  z-index: 100;
+  display: table;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
-#membership-page #section-2 .center-wrapper .membership-wrapper .membership h1 {
-  color: white;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
 }
-#membership-page #section-2 .center-wrapper .membership-wrapper .membership .buttons {
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper h1 {
+  margin: 0;
+  padding: 0;
+}
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .black {
+  color: black;
+}
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .buttons {
   width: 100%;
   text-align: center;
+  margin: 25px 0;
 }
-#membership-page #section-2 .center-wrapper .membership-wrapper .membership .buttons .button {
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .buttons .button {
   background: transparent;
   padding: 12px 40px;
   outline: none;
@@ -1715,9 +1729,16 @@ a:hover, a:active {
   text-decoration: none;
   cursor: pointer;
 }
-#membership-page #section-2 .center-wrapper .membership-wrapper .membership .buttons .button.fill {
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .buttons .button.fill {
   background: #e85a71;
   border: #e85a71;
+}
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .buttons .button.dark {
+  border: 1px solid black;
+  color: black;
+}
+#membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .buttons .button:hover {
+  opacity: 0.8;
 }
 #contact-page h1 {
   font-size: 22px;
