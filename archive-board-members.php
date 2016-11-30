@@ -176,11 +176,11 @@ get_header(); ?>
 							?>
 
 <!-- begin individual a.sponsor "card" -->
-							<div class="event-wrapper">
+							<div class="event-wrapper height-auto">
 
 								<div class="image-wrapper">
 						      <?php if ($boardMember_img_id) { ?>
-						        <img src="<?php echo $img_url ?>" alt="" />
+						        <img src="<?php echo $img_url ?>" alt="" style="height: 200px;" />
 						      <?php } ?>
 						    </div>
 
@@ -190,18 +190,20 @@ get_header(); ?>
 						        <h3 class="about-header"><?php echo $boardMemberName; ?></h3>
 						      <?php } ?>
 
-									<?php if ($boardMemberChapter) { ?>
-										<h5 class="about-sub-header"><?php echo $boardMemberChapter; ?></h5>
-									<?php } ?>
-
-									<?php if ($memberJobTitle) { ?>
+						      <?php if ($memberJobTitle) { ?>
 										<p><?php echo $memberJobTitle; ?>, <?php echo $memberCompany; ?></p>
 									<?php } ?>
 
+									<?php if ($boardMemberChapter) { ?>
+										<p class="about-sub-header" style="padding-top: 5px;"><?php echo $boardMemberChapter; ?></p>
+									<?php } ?>
+
+								</div>
+								<div style="clear: both;"></div>
+								<div style="padding-top: 20px;">
 									<?php if ($memberDescription) { ?>
 										<p><?php echo $memberDescription; ?></p>
 									<?php } ?>
-
 								</div>
 							</div>
 <!-- end "card" -->
