@@ -17,7 +17,7 @@ get_header(); ?>
 				<div class="overlay"></div>
 				<div class="text-wrapper">
 					<h1>
-						SCHOLARSHIPS
+						Scholarships
 					</h1>
 				</div>
 			</section>

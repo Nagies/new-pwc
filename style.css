@@ -1331,6 +1331,10 @@ a:hover, a:active {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper.no-after:after {
+  content: "";
+  background: none;
+}
 #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper img {
   height: 100%;
   width: 100%;
@@ -1411,16 +1415,33 @@ a:hover, a:active {
   color: #454552;
   padding: 5px 0;
 }
-#about-page #section-2 .about-container .text-wrapper .contact {
-  float: left;
-  width: 50%;
-  height: 300px;
-  padding: 1rem 0;
+#about-page #section-2 .about-container .text-wrapper .contact-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
 }
-#about-page #section-2 .about-container .text-wrapper .contact h1 {
+#about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact-chpt {
+  float: left;
+  width: 35%;
+  height: 100%;
+}
+#about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact-chpt h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+#about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact {
+  width: 65%;
+  height: 100%;
+  float: right;
+  text-align: left;
+  padding: 0 50px;
+}
+#about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact h1 {
   margin: 5px 0;
 }
-#about-page #section-2 .about-container .text-wrapper .contact p {
+#about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact p {
   padding: 0;
   margin: 0;
   font-size: 16px;

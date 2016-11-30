@@ -277,6 +277,13 @@
 									background: rgba(0,0,0,0.5);
 								}
 
+								&.no-after {
+									&:after {
+										content: "";
+										background: none;
+									}
+								}
+
 								img {
 									height: 100%;
 									width: 100%;
@@ -377,23 +384,44 @@
 					padding: 5px 0;
 				}
 
-				.contact {
-					float: left;
-					width: 50%;
-					height: 300px;
-					padding: 1rem 0;
+				.contact-wrapper {
+					width: 100%;
+					overflow: hidden;
+					margin: 20px 0;
 
-					h1 {
-						margin: 5px 0;
+					.contact-chpt {
+						float: left;
+						width: 35%;
+						height: 100%;
+						
+						h3 {
+							margin: 0;
+							padding: 0;
+							font-size: 18px;
+							font-weight: 500;
+						}
 					}
 
-					p {
-						padding: 0;
-						margin: 0;
-						font-size: 16px;
-					}
+					.contact {
+						width: 65%;
+						height: 100%;
+						float: right;
+						text-align: left;
+						padding: 0 50px;
 
+						h1 {
+							margin: 5px 0;
+						}
+
+						p {
+							padding: 0;
+							margin: 0;
+							font-size: 16px;
+						}
+					}
 				}
+
+				
 			}
 
 			.divider {

@@ -15,7 +15,7 @@ get_header(); ?>
 			<section id="section-1">
 				<div class="overlay"></div>
 				<div class="text-wrapper">
-					<h1>SPONSORS</h1>
+					<h1>Sponsors</h1>
 				</div>
 			</section>
 			<section id="section-2">

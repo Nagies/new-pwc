@@ -22,7 +22,7 @@ get_header(); ?>
 				<section id="section-1">
 					<div class="overlay"></div>
 					<div class="text-wrapper">
-						<h1>CONTACT</h1>
+						<h1>Contact</h1>
 					</div>
 				</section>
 
@@ -67,61 +67,68 @@ get_header(); ?>
 					</div>
 					<div class="text-wrapper"> -->
 
-						<h1>
+						<h1 style="margin-bottom: 25px;">
 							CONTACT A CHAPTER
 						</h1>
 
-						<div class="contact">
-							<p>
-								New York - PWC National
-							</p>
+						<div class="contact-wrapper">
+							<div class="contact-chpt">
+								<h3>New York - PWC National</h3>
+							</div>
 
-							<p>
-								1001 Avenue of the Americas <br>
-								Suite 405 <br>
-								New York, NY 10018 <br>
-								T (212) 486-7745 <br>
-							</p>
+							<div class="contact">
+								<p>
+									1001 Avenue of the Americas <br>
+									Suite 405 <br>
+									New York, NY 10018 <br>
+									T (212) 486-7745 <br>
+								</p>
+							</div>
 						</div>
 
-						<div class="contact">
-							<p>
-								New Jersey Chapter
-							</p>
+						<div class="contact-wrapper">
+							<div class="contact-chpt">
+								<h3>New Jersey</h3>
+							</div>
+							<div class="contact">
+								<p>
+									Chapter President: Carolyn Pugaczewski <br>
+									M. Adams & Associates, Inc. <br>
+									Vice President <br>
+									226 Middle Rd., Suite 4 <br>
+									Hazlet, NJ 07730 <br>
 
-							<p>
-								Chapter President: Carolyn Pugaczewski <br>
-								M. Adams & Associates, Inc. <br>
-								Vice President <br>
-								226 Middle Rd., Suite 4 <br>
-								Hazlet, NJ 07730 <br>
-
-								Work (732) 888-0838 <br>
-								Cell (732) 687-8931 <br>
-							</p>
+									Work (732) 888-0838 <br>
+									Cell (732) 687-8931 <br>
+								</p>
+							</div>
 						</div>
 
-						<div class="contact">
-							<p>
-								Connecticut Chapter
-							</p>
-
-							<p>
-								Professional Women in Construction, CT Chapter <br>
-								PO Box 230411, Hartford, CT 06123-0411 <br>
-								President Laurann Asklof <br> T (860) 251-5317 <br>info@pwc-ct.org
-							</p>
+						<div class="contact-wrapper">
+							
+							<div class="contact-chpt">
+								<h3>Connecticut</h3>
+							</div>
+							<div class="contact">
+								
+								<p>
+									Professional Women in Construction, CT Chapter <br>
+									PO Box 230411, Hartford, CT 06123-0411 <br>
+									President Laurann Asklof <br> T (860) 251-5317 <br>info@pwc-ct.org
+								</p>
+							</div>
 						</div>
 
-						<div class="contact">
-							<p>
-								Washington DC Chapter
-							</p>
-
-							<p class="m-bottom">
-								PO Box 34462, Washington, DC 20043 <br>
-								info@pwcdc.org
-							</p>
+						<div class="contact-wrapper">
+							<div class="contact-chpt">
+								<h3>Washington, D.C.</h3>
+							</div>
+							<div class="contact">
+								<p class="m-bottom">
+									PO Box 34462, Washington, DC 20043 <br>
+									info@pwcdc.org
+								</p>
+							</div>
 						</div>
 
 

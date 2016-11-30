@@ -16,7 +16,7 @@ get_header(); ?>
 				<div class="overlay"></div>
 				<div class="text-wrapper">
 					<h1>
-						BOARD OF DIRECTORS
+						Board of Directors
 					</h1>
 				</div>
 			</section>
@@ -178,7 +178,7 @@ get_header(); ?>
 <!-- begin individual a.sponsor "card" -->
 							<div class="event-wrapper height-auto">
 
-								<div class="image-wrapper">
+								<div class="image-wrapper no-after">
 						      <?php if ($boardMember_img_id) { ?>
 						        <img src="<?php echo $img_url ?>" alt="" style="height: 200px;" />
 						      <?php } ?>
