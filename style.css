@@ -1289,6 +1289,12 @@ a:hover, a:active {
   margin: 15px auto;
   border-bottom: 1px solid #ccc;
 }
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper.shorter {
+  height: 200px;
+}
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper:last-child {
+  border-bottom: 0;
+}
 #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper {
   float: left;
   width: 35%;
@@ -1361,7 +1367,7 @@ a:hover, a:active {
 #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 {
   text-decoration: none;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   margin: 0;
   padding: 0;
@@ -2175,6 +2181,9 @@ a:hover, a:active {
   margin: 15px auto;
   border-bottom: 1px solid #ccc;
 }
+#events-page #events-tabs-section #tabs .event-wrapper:last-child {
+  border-bottom: 0;
+}
 #events-page #events-tabs-section #tabs .event-wrapper .image-wrapper {
   float: left;
   width: 35%;
@@ -2382,6 +2391,10 @@ a:hover, a:active {
   }
   .site-footer .site-info .footer .info-wrapper a:hover {
     text-decoration: none;
+  }
+  .site-footer .site-info .footer .footer-site-map .borders {
+    border-left: 0 !important;
+    border-right: 0 !important;
   }
 }
 #news-page h1 {

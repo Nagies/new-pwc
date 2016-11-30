@@ -512,6 +512,10 @@
 				margin: 15px auto;
 				border-bottom: 1px solid #ccc;
 
+				&:last-child {
+					border-bottom: 0;
+				}
+
 				.image-wrapper {
 					float: left;
 					width: 35%;

@@ -152,21 +152,29 @@ get_header(); ?>
 							?>
 
 <!-- begin individual a.sponsor "card" -->
-							<div class="event-wrapper">
+							<div class="event-wrapper shorter">
 
-					      <?php if ($sponsor_website) { ?>
-					        <h3><a href="<?php echo $sponsor_website; ?> "><?php echo $sponsorTitle; ?></a></h3>
-					      <?php } else { ?>
-					        <h3><?php echo $sponsorTitle; ?></h3>
-					      <?php } ?>
+								<div class="image-wrapper">
 
-								<?php if ($sponsorChapter) { ?>
-									<p><?php echo $sponsorChapter; ?></p>
-								<?php } ?>
+									<?php if ($sponsor_img_id) { ?>
+						        <img src="<?php echo $img_url ?>" alt="" />
+						      <?php } ?>
+						    </div>
 
-					      <?php if ($sponsor_img_id) { ?>
-					        <img src="<?php echo $img_url ?>" alt="" />
-					      <?php } ?>
+						    <div class="text-wrapper">
+
+						      <?php if ($sponsor_website) { ?>
+						        <h3><a href="<?php echo $sponsor_website; ?> "><?php echo $sponsorTitle; ?></a></h3>
+						      <?php } else { ?>
+						        <h3><?php echo $sponsorTitle; ?></h3>
+						      <?php } ?>
+
+									<?php if ($sponsorChapter) { ?>
+										<p><?php echo $sponsorChapter; ?></p>
+									<?php } ?>
+								</div>
+
+					      
 
 							</div>
 <!-- end "card" -->

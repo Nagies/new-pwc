@@ -229,6 +229,14 @@
 							margin: 15px auto;
 							border-bottom: 1px solid #ccc;
 
+							&.shorter {
+								height: 200px;
+							}
+
+							&:last-child {
+								border-bottom: 0;
+							}
+
 							.image-wrapper {
 								float: left;
 								width: 35%;
@@ -310,7 +318,7 @@
 								h3 {
 									text-decoration: none;
 									font-weight: 600;
-									font-size: 30px;
+									font-size: 20px;
 									font-style: italic;
 									margin: 0;
 									padding: 0;
