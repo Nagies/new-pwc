@@ -233,8 +233,27 @@
 								height: 200px;
 							}
 
+							&.height-auto {
+								height: auto;
+							}
+
 							&:last-child {
 								border-bottom: 0;
+							}
+
+							.about-scholarship-header {
+								font-size: 20px;
+								margin: 0;
+								padding: 0;
+								text-align: left;
+							}
+
+							.about-scholarship-sub-header {
+								font-size: 14px;
+								margin: 0;
+								padding: 0;
+								text-align: left;
+								margin: 5px 0;
 							}
 
 							.image-wrapper {

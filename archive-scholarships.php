@@ -152,9 +152,9 @@ get_header(); ?>
 							?>
 
 <!-- begin individual a.sponsor "card" -->
-							<div class="event-wrapper">
+							<div class="event-wrapper height-auto">
 					      <?php if ($scholarshipName) { ?>
-					        <h3><?php echo $scholarshipName; ?></h3>
+					        <h3 class="about-scholarship-header"><?php echo $scholarshipName; ?></h3>
 					      <?php } ?>
 
 					      <?php if ($scholarship_img_id) { ?>
@@ -162,7 +162,7 @@ get_header(); ?>
 					      <?php } ?>
 
 								<?php if ($scholarshipChapter) { ?>
-									<p><?php echo $scholarshipChapter; ?></p>
+									<h5 class="about-scholarship-sub-header"><?php echo $scholarshipChapter; ?></h5>
 								<?php } ?>
 
 								<?php if ($memberJobTitle) { ?>
@@ -170,7 +170,7 @@ get_header(); ?>
 								<?php } ?>
 
 								<?php if ($memberDescription) { ?>
-									<p><?php echo $memberDescription; ?></p>
+									<p class="about-scholarship-body"><?php echo $memberDescription; ?></p>
 								<?php } ?>
 							</div>
 <!-- end "card" -->
