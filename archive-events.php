@@ -19,7 +19,7 @@ get_header(); ?>
 				<div class="overlay"></div>
 				<div class="text-wrapper">
 					<h1>
-						EVENTS
+						Events
 					</h1>
 				</div>
 			</section>
@@ -250,7 +250,9 @@ get_header(); ?>
 					        </div>
 
 									<div class="icon-wrapper">
-				        		<icon class="icon-arrow-right"></icon>
+										<a href="<?php echo $eventLink; ?>">
+				        			<icon class="icon-arrow-right"></icon>
+				        		</a>
 				        	</div>
 
 				        </div>

@@ -225,7 +225,16 @@ get_header(); ?>
 								?>
 
 								<div class="speaker-wrapper">
-									<div style="height: 110px;">
+									<!-- speaker img -->
+									<?php if ($speaker_img_id) { // display provided speaker img ?>
+										<img src=" <?php echo $speaker_img; ?> " alt="" />
+										<br>
+									<?php } else { // otherwise display default mysteray man img ?>
+										<img src=" <?php echo $default_speaker_img; ?> " alt="" />
+										<br>
+									<?php } ?>
+
+									<div style="height: 115px;">
 										<p>Speaker #<?php echo $counter; ?>: 
 											<span><?php echo $speaker_name; ?></span>
 										</p>
@@ -246,22 +255,10 @@ get_header(); ?>
 										<?php } ?>
 									</div>
 
-									<!-- speaker img -->
-									<?php if ($speaker_img_id) { // display provided speaker img ?>
-										<img src=" <?php echo $speaker_img; ?> " alt="" />
-										<br>
-									<?php } else { // otherwise display default mysteray man img ?>
-										<img src=" <?php echo $default_speaker_img; ?> " alt="" />
-										<br>
-									<?php } ?>
-
 								<!-- speaker bio: -->
 								<?php if ($speaker_bio) { ?>
 									<p class="speaker-bio"><?php echo $speaker_bio; ?> </p>
 								<?php } ?>
-
-								<!-- View More -->
-								<a href="" class="view-more">View More</a>
 
 								</div>
 
@@ -307,8 +304,7 @@ get_header(); ?>
 								<?php } ?>
 							
 
-							<!-- View More -->
-								<a href="" class="view-more">View More</a>
+							
 							
 							</div>
 
