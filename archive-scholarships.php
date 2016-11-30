@@ -70,7 +70,7 @@ get_header(); ?>
 			<?php
 			  // doing this manually because want in specific order
 			  $chapterSlugArr = [
-					'all'							=>  'ALL SCHOLARSHIPS',
+					'all'							=>  'ALL',
 					'new-york'        =>  'NEW YORK',
 			    'new-jersey'      =>  'NEW JERSEY',
 			    'connecticut'     =>  'CONNECTICUT',
@@ -154,7 +154,7 @@ get_header(); ?>
 <!-- begin individual a.sponsor "card" -->
 							<div class="event-wrapper height-auto">
 					      <?php if ($scholarshipName) { ?>
-					        <h3 class="about-scholarship-header"><?php echo $scholarshipName; ?></h3>
+					        <h3 class="about-header"><?php echo $scholarshipName; ?></h3>
 					      <?php } ?>
 
 					      <?php if ($scholarship_img_id) { ?>
@@ -162,7 +162,7 @@ get_header(); ?>
 					      <?php } ?>
 
 								<?php if ($scholarshipChapter) { ?>
-									<h5 class="about-scholarship-sub-header"><?php echo $scholarshipChapter; ?></h5>
+									<h5 class="about-sub-header"><?php echo $scholarshipChapter; ?></h5>
 								<?php } ?>
 
 								<?php if ($memberJobTitle) { ?>
@@ -170,7 +170,7 @@ get_header(); ?>
 								<?php } ?>
 
 								<?php if ($memberDescription) { ?>
-									<p class="about-scholarship-body"><?php echo $memberDescription; ?></p>
+									<p class="about-body"><?php echo $memberDescription; ?></p>
 								<?php } ?>
 							</div>
 <!-- end "card" -->

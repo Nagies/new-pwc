@@ -65,7 +65,7 @@ get_header(); ?>
 			<?php
 			  // doing this manually because want in specific order
 			  $chapterSlugArr = [
-					'all'							=>  'ALL BOARD MEMBERS',
+					'all'							=>  'ALL',
 					'new-york'        =>  'NEW YORK',
 			    'new-jersey'      =>  'NEW JERSEY',
 			    'connecticut'     =>  'CONNECTICUT',
@@ -177,25 +177,32 @@ get_header(); ?>
 
 <!-- begin individual a.sponsor "card" -->
 							<div class="event-wrapper">
-					      <?php if ($boardMemberName) { ?>
-					        <h3><?php echo $boardMemberName; ?></h3>
-					      <?php } ?>
 
-					      <?php if ($boardMember_img_id) { ?>
-					        <img src="<?php echo $img_url ?>" alt="" />
-					      <?php } ?>
+								<div class="image-wrapper">
+						      <?php if ($boardMember_img_id) { ?>
+						        <img src="<?php echo $img_url ?>" alt="" />
+						      <?php } ?>
+						    </div>
 
-								<?php if ($boardMemberChapter) { ?>
-									<p><?php echo $boardMemberChapter; ?></p>
-								<?php } ?>
+						    <div class="text-wrapper">
 
-								<?php if ($memberJobTitle) { ?>
-									<p><?php echo $memberJobTitle; ?>, <?php echo $memberCompany; ?></p>
-								<?php } ?>
+						      <?php if ($boardMemberName) { ?>
+						        <h3 class="about-header"><?php echo $boardMemberName; ?></h3>
+						      <?php } ?>
 
-								<?php if ($memberDescription) { ?>
-									<p><?php echo $memberDescription; ?></p>
-								<?php } ?>
+									<?php if ($boardMemberChapter) { ?>
+										<h5 class="about-sub-header"><?php echo $boardMemberChapter; ?></h5>
+									<?php } ?>
+
+									<?php if ($memberJobTitle) { ?>
+										<p><?php echo $memberJobTitle; ?>, <?php echo $memberCompany; ?></p>
+									<?php } ?>
+
+									<?php if ($memberDescription) { ?>
+										<p><?php echo $memberDescription; ?></p>
+									<?php } ?>
+
+								</div>
 							</div>
 <!-- end "card" -->
 

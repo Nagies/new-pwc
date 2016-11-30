@@ -66,7 +66,7 @@ get_header(); ?>
 			<?php
 			  // doing this manually because want in specific order
 			  $chapterSlugArr = [
-					'all'							=>  'ALL EVENTS',
+					'all'							=>  'ALL',
 					'new-york'        =>  'NEW YORK',
 			    'new-jersey'      =>  'NEW JERSEY',
 			    'connecticut'     =>  'CONNECTICUT',

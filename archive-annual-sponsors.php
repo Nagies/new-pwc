@@ -64,7 +64,7 @@ get_header(); ?>
 			<?php
 			  // doing this manually because want in specific order
 			  $chapterSlugArr = [
-					'all'							=>  'ALL SPONSORS',
+					'all'							=>  'ALL',
 					'new-york'        =>  'NEW YORK',
 			    'new-jersey'      =>  'NEW JERSEY',
 			    'connecticut'     =>  'CONNECTICUT',

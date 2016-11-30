@@ -1298,13 +1298,13 @@ a:hover, a:active {
 #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper:last-child {
   border-bottom: 0;
 }
-#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-scholarship-header {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-header {
   font-size: 20px;
   margin: 0;
   padding: 0;
   text-align: left;
 }
-#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-scholarship-sub-header {
+#about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-sub-header {
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -1384,7 +1384,6 @@ a:hover, a:active {
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
-  font-style: italic;
   margin: 0;
   padding: 0;
   line-height: 40px;
