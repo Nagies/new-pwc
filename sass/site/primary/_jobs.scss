@@ -3,14 +3,15 @@
 	h1 {
 		font-size: 22px;
     font-weight: 500;
-    color: $dark;
+    color: $blue;
    }
 
   p {
-    color: $dark;
     font-size: 16px;
-    line-height: 30px;
     text-align: left;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
   }
 
 	#section-1 {
@@ -77,7 +78,7 @@
 		}
 		
 		.text-wrap {
-			max-width: 800px;
+			max-width: 1000px;
 			margin: 75px auto;
 
 			.jobs-main-header {
@@ -97,30 +98,36 @@
 				color: $red;
 				text-decoration: none;
 				font-size: 14px;
-				margin: 10px 0;
+				margin: 25px 0;
 				display: block; 
 				text-align: center;
 			}
 			
 			.job-container {
+				overflow: hidden;
+				width: 100%;
+				margin: 35px auto;
+
 				.job {
-					width: 100%;
+					width: 33.333333%;
 					display: block;
-					margin: 20px 0;
+					margin: 30px 0;
+					float: left;
 
 					h3 {
 						margin: 0;
 						padding: 0;
-						font-size: 20px;
+						font-size: 16px;
 
 						a {
 							text-decoration: none;
 							color: $blue;
+							font-family: 'Libre Baskerville', serif;
 						}
 					}
 
 					p {
-						line-height: 24px;
+						line-height: 22px;
 						padding: 0;
 						margin: 0;
 						font-size: 14px;

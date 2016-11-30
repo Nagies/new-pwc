@@ -1454,13 +1454,14 @@ a:hover, a:active {
 #jobs-page h1 {
   font-size: 22px;
   font-weight: 500;
-  color: #454552;
+  color: #145268;
 }
 #jobs-page p {
-  color: #454552;
   font-size: 16px;
-  line-height: 30px;
   text-align: left;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
 }
 #jobs-page #section-1 {
   height: 85px;
@@ -1517,7 +1518,7 @@ a:hover, a:active {
   display: block;
 }
 #jobs-page #section-2 .text-wrap {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 75px auto;
 }
 #jobs-page #section-2 .text-wrap .jobs-main-header {
@@ -1535,26 +1536,33 @@ a:hover, a:active {
   color: #e85a71;
   text-decoration: none;
   font-size: 14px;
-  margin: 10px 0;
+  margin: 25px 0;
   display: block;
   text-align: center;
 }
-#jobs-page #section-2 .text-wrap .job-container .job {
+#jobs-page #section-2 .text-wrap .job-container {
+  overflow: hidden;
   width: 100%;
+  margin: 35px auto;
+}
+#jobs-page #section-2 .text-wrap .job-container .job {
+  width: 33.33333%;
   display: block;
-  margin: 20px 0;
+  margin: 30px 0;
+  float: left;
 }
 #jobs-page #section-2 .text-wrap .job-container .job h3 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 #jobs-page #section-2 .text-wrap .job-container .job h3 a {
   text-decoration: none;
   color: #145268;
+  font-family: 'Libre Baskerville', serif;
 }
 #jobs-page #section-2 .text-wrap .job-container .job p {
-  line-height: 24px;
+  line-height: 22px;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -1662,31 +1670,28 @@ a:hover, a:active {
   font-weight: 400;
   margin-top: 5px;
 }
-#membership-page #section-2 {
-  background: white;
-}
 #membership-page #section-2 .center-wrapper {
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 3rem 0;
 }
 #membership-page #section-2 .center-wrapper .membership-wrapper {
   float: left;
   width: 50%;
-  height: 400px;
+  height: 600px;
   text-align: center;
-  padding: 20px;
+}
+#membership-page #section-2 .center-wrapper .membership-wrapper.new {
+  background-image: url("images/textured-bg.png");
+}
+#membership-page #section-2 .center-wrapper .membership-wrapper.renew {
+  background-image: url("images/textured-bg-2.png");
 }
 #membership-page #section-2 .center-wrapper .membership-wrapper .membership {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 2px;
   height: 100%;
   width: 100%;
-  background: #454552;
   position: relative;
   z-index: 100;
-  padding: 20px;
 }
 #membership-page #section-2 .center-wrapper .membership-wrapper .membership h1 {
   color: white;

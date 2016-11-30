@@ -19,7 +19,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div id="membership-page">
-				<section id="section-1">
+				<!-- <section id="section-1">
 					<div class="text-wrapper">
 						<h1>
 							Membership
@@ -27,12 +27,12 @@ get_header(); ?>
 						<h3>
 							Membership is open to professional women and men, companies and public agencies in construction and allied industries.
 						</h3>
-					</div>
-				</section>
+					</div> -->
+				<!-- </section> -->
 
 				<section id="section-2">
 					<div class="center-wrapper">
-				  	<div class="membership-wrapper">
+				  	<div class="membership-wrapper new">
 							<div class="membership">
 								<h1>
 									Apply for a new membership
@@ -44,7 +44,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="membership-wrapper">
+						<div class="membership-wrapper renew">
 							<div class="membership">
 								<h1>
 									Renew an existing membership

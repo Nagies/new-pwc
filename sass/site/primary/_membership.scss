@@ -41,7 +41,7 @@
 		// background-repeat: no-repeat;
 		// background-position: center center;
 		// position: relative;
-		background: white;
+		// background: transparent;
 
 		// &:after {
 		// 	content: '';
@@ -56,27 +56,30 @@
 		// }
 
 		.center-wrapper {
-			max-width: 1000px;
+			width: 100%;
 			margin: 0 auto;
 			overflow: hidden;
-			padding: 3rem 0;
 
 			.membership-wrapper {
 				float: left;
 				width: 50%;
-				height: 400px;
+				height: 600px;
 				text-align: center;
-				padding: 20px;
+
+				&.new {
+					background-image: url("images/textured-bg.png");
+				}
+
+				&.renew {
+					background-image: url("images/textured-bg-2.png")
+				}
+
 				
 				.membership {
-					box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-					border-radius: 2px;
 					height: 100%;
 					width: 100%;
-					background: $dark;
 					position: relative; 
 					z-index: 100;
-					padding: 20px;
 
 					h1 {
 						color: white;
