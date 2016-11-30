@@ -2489,6 +2489,13 @@ a:hover, a:active {
   width: 1150px;
   margin: 50px auto;
 }
+#news-page #section-2 .news-container .news-wrapper {
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+}
+#news-page #section-2 .news-container .news-wrapper:last-child {
+  border-bottom: 0;
+}
 #news-page #section-2 .news-container .news-wrapper h3 {
   margin: 0;
   padding: 0;
@@ -2499,14 +2506,8 @@ a:hover, a:active {
   line-height: normal;
   padding: 0;
   margin: 0;
-  font-style: italic;
-  font-weight: 600;
-}
-#news-page #section-2 .news-container .news-wrapper .divider {
-  height: 1px;
-  width: 100%;
-  margin: 25px auto 50px;
-  background: #ccc;
+  font-weight: 500;
+  font-size: 14px;
 }
 #news-page #section-1-show {
   height: 75px;
@@ -2528,8 +2529,7 @@ a:hover, a:active {
 #news-page #section-2-show .date-wrapper h3 {
   margin: 0 0 20px;
   font-weight: 600;
-  font-size: 18px;
-  font-style: italic;
+  font-size: 16px;
   display: block;
   width: 100%;
 }
@@ -2559,22 +2559,19 @@ a:hover, a:active {
   margin-bottom: 30px;
 }
 #news-page #section-2-show .event-show-header .event-show-title {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
-  font-style: italic;
   margin: 40px 0 0;
   text-align: center;
 }
 #news-page #section-2-show .news-description {
-  -webkit-columns: 300px 2;
-  -moz-columns: 300px 2;
-  columns: 300px 2;
+  max-width: 800px;
+  margin: 0 auto;
 }
 #news-page #section-2-show .news-description p {
   margin: 0;
   padding: 0 15px;
   line-height: 28px;
-  text-align: justify;
 }
 .infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
   display: none;

@@ -19,7 +19,7 @@ get_header(); ?>
         <div class="overlay"></div>
         <div class="text-wrapper">
           <h1>
-            NEWS
+            News
           </h1>
         </div>
       </section>
@@ -76,7 +76,7 @@ get_header(); ?>
                   <!-- post img -->
                   <img src=" <?php echo $newsPost_img; ?> " alt="" />
 
-                  <div class="divider"></div>
+                  <!-- <div class="divider"></div> -->
                 </div>
 
 
