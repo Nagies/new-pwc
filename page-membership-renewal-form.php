@@ -104,27 +104,56 @@ if ( $new_post_id ) {
 						 value="" size=60><br>
 
 			<!-- chapter_preference | taxonomy 'chapter' -->
-			<b><label for="chapter_preference">Chapter Preference*:</label></b><br>
-			<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span><br>
-			<input type="radio" name="chapter_preference" value="new-york">New York <br>
-			<input type="radio" name="chapter_preference" value="new-jersey">New Jersey <br>
-			<input type="radio" name="chapter_preference" value="connecticut">Connecticut <br>
-			<input type="radio" name="chapter_preference" value="washington-dc">Washington, D.C. <br><br>
+			<b><label for="chapter_preference">Chapter Preference*:</label></b>
+			<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span>
+			
+			<div style="overflow: hidden; margin: 10px 0;">
+				<div class="radio-wrapper">
+					<input type="radio" name="chapter_preference" value="new-york"> New York
+				</div>
+				<div class="radio-wrapper">
+					<input type="radio" name="chapter_preference" value="new-jersey"> New Jersey
+				</div>
+				<div class="radio-wrapper">
+					<input type="radio" name="chapter_preference" value="connecticut"> Connecticut
+				</div>
+				<div class="radio-wrapper">
+					<input type="radio" name="chapter_preference" value
+				="washington-dc"> Washington, D.C.
+				</div>
+			</div>
 
 			<!-- membership category | meta -->
 			<div>
-				<label for="member_type"><b>Membership Category:</b></label><br>
-				<span>Final approval of membership is at the discretion of the PWC Board of Directors.</span><br><br>
-				<input type="radio" value="corp-a" name="member_type">
-					<b>Corporate A</b>: gross income: $5M+ / entitled to 6 representatives / annual dues: $750<br>
-				<input type="radio" value="corp-b" name="member_type">
-					<b>Corporate B</b>: gross income: under $5M / entitled to 4 representatives / annual dues: $450<br>
-				<input type="radio" value="business" name="member_type">
-					<b>Business</b>: sole prop./consultant  with 3 or fewer employees / entitled to 2 reps / annual dues: $275<br>
-				<input type="radio" value="individual" name="member_type">
-					<b>Individual</b>: employee / entitled to self-representation (does not extend to employer) / annual dues: $225<br>
-				<input type="radio" value="student" name="member_type">
-					<b>Student</b>: matriculating at accredited institution; non-voting category / annual dues: $65
+				<label for="member_type"><b>Membership Category:</b></label>
+				<span>Final approval of membership is at the discretion of the PWC Board of Directors.</span><br>
+
+				<div style="margin-top: 10px; overflow: hidden;">
+
+				<div class="radio-wrapper no-margin-r vert-margin">
+					<input type="radio" value="corp-a" name="member_type">
+						<b>Corporate A</b>: gross income: $5M+ / entitled to 6 representatives / annual dues: $750<br>
+				</div>
+
+				<div class="radio-wrapper no-margin-r vert-margin">
+					<input type="radio" value="corp-b" name="member_type">
+						<b>Corporate B</b>: gross income: under $5M / entitled to 4 representatives / annual dues: $450<br>
+				</div>
+
+				<div class="radio-wrapper no-margin-r vert-margin">
+					<input type="radio" value="business" name="member_type">
+						<b>Business</b>: sole prop./consultant  with 3 or fewer employees / entitled to 2 reps / annual dues: $275<br>
+				</div>
+
+				<div class="radio-wrapper no-margin-r vert-margin">
+					<input type="radio" value="individual" name="member_type">
+						<b>Individual</b>: employee / entitled to self-representation (does not extend to employer) / annual dues: $225<br>
+				</div>
+
+				<div class="radio-wrapper no-margin-r vert-margin">
+					<input type="radio" value="student" name="member_type">
+						<b>Student</b>: matriculating at accredited institution; non-voting category / annual dues: $65
+				</div>
 			</div>
 
 			<div>

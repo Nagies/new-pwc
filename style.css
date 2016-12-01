@@ -1612,21 +1612,43 @@ a:hover, a:active {
   background: white;
   height: 35px;
 }
-#jobs-page #section-2-show #job-forms .checkbox-wrapper, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper, #jobs-page #section-2-show #job-forms .radio-wrapper, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper {
+#jobs-page #section-2-show #job-forms .checkbox-wrapper, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper {
   float: left;
   width: 25%;
   padding: 5px 0;
   margin-bottom: 15px;
 }
-#jobs-page #section-2-show #job-forms .checkbox-wrapper:after, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper:after, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper:after, #jobs-page #section-2-show #job-forms .radio-wrapper:after, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper:after, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper:after {
+#jobs-page #section-2-show #job-forms .checkbox-wrapper:after, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper:after, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper:after {
   content: '';
   display: block;
   clear: both;
 }
-#jobs-page #section-2-show #job-forms .checkbox-wrapper input, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper input, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper input, #jobs-page #section-2-show #job-forms .radio-wrapper input, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper input, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper input, #jobs-page #section-2-show #job-forms .checkbox-wrapper label, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper label, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper label, #jobs-page #section-2-show #job-forms .radio-wrapper label, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper label, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper label {
+#jobs-page #section-2-show #job-forms .checkbox-wrapper input, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper input, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper input, #jobs-page #section-2-show #job-forms .checkbox-wrapper label, #jobs-page #section-2-show #new-member-submission-form .checkbox-wrapper label, #jobs-page #section-2-show #member-renewal-submission-form .checkbox-wrapper label {
   display: inline-block;
   width: auto;
   margin-right: 5px;
+}
+#jobs-page #section-2-show #job-forms .radio-wrapper, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper {
+  float: left;
+  width: auto;
+  margin-right: 25px;
+  padding-left: 1px;
+}
+#jobs-page #section-2-show #job-forms .radio-wrapper.no-margin-r, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper.no-margin-r, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper.no-margin-r {
+  margin-right: 0;
+}
+#jobs-page #section-2-show #job-forms .radio-wrapper.vert-margin, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper.vert-margin, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper.vert-margin {
+  margin: 10px 0;
+}
+#jobs-page #section-2-show #job-forms .radio-wrapper input, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper input, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper input {
+  width: auto;
+}
+#jobs-page #section-2-show #job-forms .radio-wrapper label, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper label, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper label {
+  display: inline-block;
+  padding: 0 5px;
+}
+#jobs-page #section-2-show #job-forms .radio-wrapper .smaller, #jobs-page #section-2-show #new-member-submission-form .radio-wrapper .smaller, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper .smaller {
+  font-size: 10px;
 }
 #jobs-page #section-2-show #job-forms .submit, #jobs-page #section-2-show #new-member-submission-form .submit, #jobs-page #section-2-show #member-renewal-submission-form .submit {
   background: #e85a71;
@@ -2536,6 +2558,20 @@ a:hover, a:active {
   #jobs-page #section-2 .text-wrap .job-container .job {
     float: none !important;
     width: 100% !important;
+  }
+  #jobs-page #section-2-show #new-member-submission-form, #jobs-page #section-2-show #member-renewal-submission-form {
+    padding: 0 20px;
+  }
+  #jobs-page #section-2-show #new-member-submission-form .radio-wrapper, #jobs-page #section-2-show #member-renewal-submission-form .radio-wrapper {
+    width: auto !important;
+  }
+  #jobs-page #section-2-show #new-member-submission-form span, #jobs-page #section-2-show #member-renewal-submission-form span, #jobs-page #section-2-show #new-member-submission-form label, #jobs-page #section-2-show #member-renewal-submission-form label {
+    font-size: 14px !important;
+  }
+  #membership-page #section-2 .center-wrapper .membership-wrapper {
+    float: none !important;
+    width: 100% !important;
+    height: 550px !important;
   }
   .site-footer {
     height: auto !important;

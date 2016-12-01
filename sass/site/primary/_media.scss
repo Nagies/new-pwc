@@ -275,6 +275,33 @@
 				}
 			}
 		}
+		
+		//Membership forms
+		#section-2-show {
+			#new-member-submission-form, #member-renewal-submission-form {
+				padding: 0 20px;
+
+				.radio-wrapper {
+					width: auto !important;
+				}
+
+				span, label {
+					font-size: 14px !important;
+				}
+			}
+		}
+	}
+
+	#membership-page {
+		#section-2 {
+			.center-wrapper {
+				.membership-wrapper {
+					float: none !important;
+					width: 100% !important;
+					height: 550px !important;
+				}
+			}
+		}
 	}
 
 	//Footer

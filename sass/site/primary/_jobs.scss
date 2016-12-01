@@ -190,7 +190,7 @@
 				height: 35px;
 			}
 
-			.checkbox-wrapper, .radio-wrapper {
+			.checkbox-wrapper {
 				float: left;
 				width: 25%;
 				padding: 5px 0;
@@ -206,6 +206,34 @@
 					display: inline-block;
 					width: auto;
 					margin-right: 5px;
+				}
+			}
+
+			.radio-wrapper {
+				float: left;
+				width: auto;
+				margin-right: 25px;
+				padding-left: 1px;
+
+				&.no-margin-r {
+					margin-right: 0;
+				}
+
+				&.vert-margin {
+					margin: 10px 0;
+				}
+
+				input {
+					width: auto;
+				}
+
+				label {
+					display: inline-block;
+					padding: 0 5px;
+				}
+
+				.smaller {
+					font-size: 10px;
 				}
 			}
 

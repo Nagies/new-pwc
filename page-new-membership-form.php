@@ -180,16 +180,16 @@ if ( $wp_error ) {
 			<label for="preferred_mailing">Please indicate preferred mailing address:</label>
 			<div style="overflow: hidden;">
 				<div class="radio-wrapper">
-					<label for="business">Business</label>
 					<input type="radio" name="preferred_mailing" value="business">
+					<label for="business">Business</label>
 				</div>
 				<div class="radio-wrapper">
-					<label for="home">Home</label>
 					<input type="radio" name="preferred_mailing" value="home">
+					<label for="home">Home</label>
 				</div> 
 			</div>
 
-		<p><b>Business Information:</b></p>
+		<h3 style="text-align: left;">Business Information</h3>
 
 		<!-- biz address | meta -->
 		<label for="biz_address">Business Address:</label>
@@ -257,7 +257,7 @@ if ( $wp_error ) {
 		</select>
 
 
-		<p><b>Home Information:</b></p>
+		<h3 style="text-align: left;">Home Information</h3>
 
 		<!-- home address | meta -->
 		<label for="home_address">Home Address:</label>
@@ -287,44 +287,66 @@ if ( $wp_error ) {
 		<!-- chapter_preference | taxonomy 'chapter' -->
 		<b><label for="chapter_preference">Chapter Preference:</label></b>
 		<span>You may vote and/or hold elected office only in the Chapter to which you belong. You may attend events of any Chapter at member discount rate.</span><br>
-		<div style="overflow: hidden;">
+		<div style="overflow: hidden; padding-top: 10px;">
 			<div class="radio-wrapper">
-				<label for="new-york">New York</label>
 				<input type="radio" name="chapter_preference" value="new-york">
+				<label for="new-york">New York</label>
+				
 			</div>
 			<div class="radio-wrapper">
-				<label for="new-jersey">New Jersey</label>
 				<input type="radio" name="chapter_preference" value="new-jersey">
+				<label for="new-jersey">New Jersey</label>
+				
 			</div>
 			<div class="radio-wrapper">
-				<label for="connecticut">Connecticut</label>
 				<input type="radio" name="chapter_preference" value="connecticut">
+				<label for="connecticut">Connecticut</label>
+				
 			</div>
 			<div class="radio-wrapper">
-				<label for="washington-dc">Washington, D.C.</label>
 				<input type="radio" name="chapter_preference" value="washington-dc">
+				<label for="washington-dc">Washington, D.C.</label>
+				
 			</div>
 		</div>
 
 		<!-- membership category | meta -->
-    <div>
+    <div style="margin: 20px 0;">
       <label for="member_type"><b>Membership Category:</b></label>
       <span>Final approval of membership is at the discretion of the PWC Board of Directors.</span><br>
+
+      <div style="margin-top: 10px; overflow: hidden;">
+
+      <div class="radio-wrapper no-margin-r">
 			
-			<label for="member_type"><b>Corporate A</b>: gross income: $5M+ / entitled to 6 representatives / annual dues: $750</label>
-      <input type="radio" value="corp-a" name="member_type">
+				<input type="radio" value="corp-a" name="member_type">
+				<label for="member_type" class="smaller"><b>Corporate A</b>: gross income: $5M+ / entitled to 6 representatives / annual dues: $750</label>
 
-      <label for="member_type"><b>Corporate B</b>: gross income: under $5M / entitled to 4 representatives / annual dues: $450</label>
-      <input type="radio" value="corp-a" name="member_type">
+			</div>
+      
+			
+			<div class="radio-wrapper no-margin-r">
+				<input type="radio" value="corp-a" name="member_type">
+	      <label for="member_type" class="smaller"><b>Corporate B</b>: gross income: under $5M / entitled to 4 representatives / annual dues: $450</label>
+	    </div>
+      
+			<div class="radio-wrapper no-margin-r">
+				<input type="radio" value="corp-a" name="member_type">
+	      <label for="member_type" class="smaller"><b>Business</b>: sole prop./consultant  with 3 or fewer employees / entitled to 2 reps / annual dues: $275</label>
+	    </div>
+      
+			<div class="radio-wrapper no-margin-r">
+				<input type="radio" value="corp-a" name="member_type">
+	      <label for="member_type" class="smaller"><b>Individual</b>: employee / entitled to self-representation (does not extend to employer) / annual dues: $225</label>
+	    </div>
+      
+			<div class="radio-wrapper no-margin-r">
+				<input type="radio" value="corp-a" name="member_type">
+	      <label for="member_type" class="smaller"><b>Student</b>: matriculating at accredited institution; non-voting category / annual dues: $65</label>
+	    </div>
 
-      <label for="member_type"><b>Business</b>: sole prop./consultant  with 3 or fewer employees / entitled to 2 reps / annual dues: $275</label>
-      <input type="radio" value="corp-a" name="member_type">
-
-      <label for="member_type"><b>Individual</b>: employee / entitled to self-representation (does not extend to employer) / annual dues: $225</label>
-      <input type="radio" value="corp-a" name="member_type">
-
-      <label for="member_type"><b>Student</b>: matriculating at accredited institution; non-voting category / annual dues: $65</label>
-      <input type="radio" value="corp-a" name="member_type">
+	    </div>
+      
     </div>
 
 		<div>
@@ -377,14 +399,24 @@ if ( $wp_error ) {
     <div>
       <p><b>Is your company currently certified by any government agency as:</b></p>
 
-      <label for="">Minority Business Enterprise (MBE)</label>
-      <input type="checkbox" name="gov_agency[]" value="mbe">
+      <div style="margin-top: 10px; overflow: hidden;">
 
-      <label for="">Disadvantaged Business Enterprise (DBE)</label>
-      <input type="checkbox" name="gov_agency[]" value="dbe">
+      <div class="radio-wrapper no-margin-r">
+	      <input type="checkbox" name="gov_agency[]" value="mbe">
+	      <label for="">Minority Business Enterprise (MBE)</label>
+	    </div>
+      
+			<div class="radio-wrapper no-margin-r">
+				<input type="checkbox" name="gov_agency[]" value="dbe">	
+	      <label for="">Disadvantaged Business Enterprise (DBE)</label>
+      </div>
 
-      <label for="">Women's Business Enterprise (WBE)</label>
-      <input type="checkbox" name="gov_agency[]" value="wbe">
+      <div class="radio-wrapper no-margin-r">
+      	<input type="checkbox" name="gov_agency[]" value="wbe">
+	      <label for="">Women's Business Enterprise (WBE)</label>
+      </div>
+
+    </div>
     </div>
 
 		<!-- agency certification | meta -->
