@@ -894,10 +894,12 @@ a:hover, a:active {
   box-shadow: none;
   line-height: normal;
   padding: 12px 55px;
-  border-radius: 2px;
+  border-radius: 20px;
   margin: 0 5px;
   text-shadow: none;
   font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 #index-page #section-1 .text-wrap .buttons-wrapper a button:hover {
   opacity: 0.75;
@@ -1069,8 +1071,9 @@ a:hover, a:active {
   box-shadow: none;
   line-height: normal;
   padding: 12px 55px;
-  border-radius: 2px;
+  border-radius: 20px;
   margin: 0 5px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   text-shadow: none;
   font-size: 14px;
   background: transparent;
@@ -2440,6 +2443,41 @@ a:hover, a:active {
     width: 100%;
     padding: 0 10px !important;
     margin-bottom: 40px;
+  }
+  #about-page #section-2 .about-container {
+    padding: 0 !important;
+  }
+  #about-page #section-2 .about-container .side-menu {
+    float: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 20px 0 !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 20px !important;
+    margin: 50px auto !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper .short-title {
+    font-size: 16px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav {
+    height: auto !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 !important;
+    background: white !important;
+    height: auto !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav li.ui-tabs-active {
+    padding: 0 !important;
+    transition: none !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-panel {
+    padding: 10px !important;
   }
   .site-footer {
     height: auto !important;

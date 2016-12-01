@@ -78,10 +78,12 @@
 						box-shadow: none;
 						line-height: normal;
 						padding: 12px 55px;
-						border-radius: 2px;
+						border-radius: 20px;
 						margin: 0 5px;
 						text-shadow: none;
 						font-size: 14px;
+						cursor: pointer;
+						box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 
 						&:hover {
 							opacity: 0.75;
@@ -353,8 +355,9 @@
 					box-shadow: none;
 					line-height: normal;
 					padding: 12px 55px;
-					border-radius: 2px;
+					border-radius: 20px;
 					margin: 0 5px;
+					box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 					text-shadow: none;
 					font-size: 14px;
 					background: transparent;

@@ -137,7 +137,54 @@
 	//About
 	#about-page {
 		#section-2 {
-			
+			.about-container {
+				padding: 0 !important;
+
+				.side-menu {
+					float: none !important;
+					width: 100% !important;
+					text-align: center !important;
+					margin: 20px 0 !important;
+				}
+
+				.text-wrapper {
+					width: 100% !important;
+					float: none !important;
+					padding: 0 20px !important
+					;
+					margin: 50px auto !important
+					;
+
+					.short-title {
+						font-size: 16px !important;
+					}
+
+					#events-tabs-section {
+						#tabs {
+							.ui-tabs-nav {
+								height: auto !important;
+
+								li {
+									width: 100% !important;
+									float: none !important;
+									padding: 0 !important;
+									background: white !important;
+									height: auto !important;
+
+									&.ui-tabs-active {
+										padding: 0 !important;
+										transition: none !important;
+									}
+								}
+							}
+
+							.ui-tabs-panel {
+								padding: 10px !important;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
