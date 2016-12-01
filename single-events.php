@@ -234,7 +234,7 @@ get_header(); ?>
 										<br>
 									<?php } ?>
 
-									<div style="height: 115px;">
+									<div style="height: 115px;" class="speaker-name">
 										<p>Speaker #<?php echo $counter; ?>: 
 											<span><?php echo $speaker_name; ?></span>
 										</p>

@@ -2041,7 +2041,7 @@ a:hover, a:active {
   box-shadow: none;
   line-height: normal;
   padding: 10px 20px;
-  border-radius: 2px;
+  border-radius: 20px;
   text-shadow: none;
   font-size: 14px;
   margin-right: 10px;
@@ -2474,6 +2474,42 @@ a:hover, a:active {
     float: none !important;
     height: auto !important;
     padding: 0 !important;
+  }
+  #events-page #section-2-show .event-show-header {
+    margin-bottom: 35px !important;
+  }
+  #events-page #section-2-show .event-show-img-wrapper {
+    height: 250px !important;
+  }
+  #events-page #section-2-show .event-show-description, #events-page #section-2-show .event-show-info, #events-page #section-2-show .event-show-sponsors-wrapper {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+  #events-page #section-2-show .event-show-info {
+    margin-top: 50px !important;
+  }
+  #events-page #section-2-show .event-show-speakers-wrapper {
+    padding: 50px 20px 0 !important;
+  }
+  #events-page #section-2-show .event-show-speakers-wrapper .speaker-wrapper {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 0 40px !important;
+  }
+  #events-page #section-2-show .event-show-speakers-wrapper .speaker-wrapper .speaker-name {
+    height: auto !important;
+    padding-bottom: 20px !important;
+  }
+  #events-page #section-2-show .event-show-speakers-wrapper .speaker-wrapper .speaker-bio {
+    font-size: 14px !important;
+  }
+  #events-page #section-2-show .sponsor-wrapper {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .site-footer {
     height: auto !important;
