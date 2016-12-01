@@ -67,8 +67,8 @@ get_header(); ?>
 					</div>
 					<div class="text-wrapper"> -->
 
-						<h1 style="margin-bottom: 25px;">
-							CONTACT A CHAPTER
+						<h1 class="contact-header" style="margin-bottom: 25px;">
+							Contact a Chapter
 						</h1>
 
 						<div class="contact-wrapper">

@@ -200,9 +200,9 @@ get_header(); ?>
 
 								</div>
 								<div style="clear: both;"></div>
-								<div style="padding-top: 20px;">
+								<div style="padding-top: 20px;" class="board-member-desc">
 									<?php if ($memberDescription) { ?>
-										<p><?php echo $memberDescription; ?></p>
+										<p class="board-member-p"><?php echo $memberDescription; ?></p>
 									<?php } ?>
 								</div>
 							</div>

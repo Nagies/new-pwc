@@ -2457,10 +2457,23 @@ a:hover, a:active {
     width: 100% !important;
     float: none !important;
     padding: 0 20px !important;
-    margin: 50px auto !important;
+    margin: 30px auto !important;
   }
   #about-page #section-2 .about-container .text-wrapper .short-title {
     font-size: 16px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper .contact-header {
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper .contact-wrapper {
+    padding: 0 20px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact-chpt, #about-page #section-2 .about-container .text-wrapper .contact-wrapper .contact {
+    width: 100% !important;
+    float: none !important;
+    height: auto !important;
+    padding: 0 !important;
   }
   #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-nav {
     height: auto !important;
@@ -2478,6 +2491,49 @@ a:hover, a:active {
   }
   #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .ui-tabs-panel {
     padding: 10px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .no-events {
+    font-size: 14px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper {
+    height: auto !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .image-wrapper {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper {
+    margin: 25px auto !important;
+    padding: 0 !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 {
+    line-height: normal !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 5px 0 !important;
+    font-size: 15px !important;
+    white-space: normal !important;
+    font-weight: 500 !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .text-wrapper h3 a {
+    font-size: inherit !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .board-member-desc {
+    padding-top: 0 !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .board-member-desc .board-member-p {
+    font-size: 14px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-header {
+    font-size: 16px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-sub-header {
+    font-size: 12px !important;
+  }
+  #about-page #section-2 .about-container .text-wrapper #events-tabs-section #tabs .event-wrapper .about-body {
+    font-size: 14px !important;
   }
   .site-footer {
     height: auto !important;

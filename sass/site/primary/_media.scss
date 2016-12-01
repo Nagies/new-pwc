@@ -152,11 +152,27 @@
 					float: none !important;
 					padding: 0 20px !important
 					;
-					margin: 50px auto !important
+					margin: 30px auto !important
 					;
 
 					.short-title {
 						font-size: 16px !important;
+					}
+
+					.contact-header {
+						text-align: center !important;
+						font-size: 18px !important;
+					}
+
+					.contact-wrapper {
+						padding: 0 20px !important;
+						
+						.contact-chpt, .contact {
+							width: 100% !important;
+							float: none !important;
+							height: auto !important;
+							padding: 0 !important;
+						}
 					}
 
 					#events-tabs-section {
@@ -180,6 +196,62 @@
 
 							.ui-tabs-panel {
 								padding: 10px !important;
+							}
+
+							.no-events {
+								font-size: 14px !important;
+							}
+
+							.event-wrapper {
+								height: auto !important;
+
+								.image-wrapper {
+									float: none !important;
+									width: 100% !important;
+									max-width: 100% !important;
+									height: auto !important;
+								}
+
+								.text-wrapper {
+									margin: 25px auto !important;
+									padding: 0 !important;
+
+									h3 {
+										line-height: normal !important;
+										overflow: visible !important;
+										padding: 0 !important;
+										margin: 5px 0 !important;
+										font-size: 15px !important;
+										white-space: normal !important;
+										font-weight: 500 !important;
+										
+										a {
+											font-size: inherit !important;
+										}
+									}
+								}
+
+								.board-member-desc {
+									padding-top: 0 !important;
+
+									.board-member-p {
+										font-size: 14px !important;
+									}
+								}
+							}
+
+							.event-wrapper {
+								.about-header {
+									font-size: 16px !important;
+								}
+
+								.about-sub-header {
+									font-size: 12px !important;
+								}
+
+								.about-body {
+									font-size: 14px !important;
+								}
 							}
 						}
 					}
