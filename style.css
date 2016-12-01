@@ -2573,6 +2573,9 @@ a:hover, a:active {
     width: 100% !important;
     height: 550px !important;
   }
+  #membership-page #section-2 .center-wrapper .membership-wrapper .membership .membership-text-wrapper .buttons .button {
+    padding: 12px 25px !important;
+  }
   .site-footer {
     height: auto !important;
   }

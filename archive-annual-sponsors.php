@@ -154,7 +154,7 @@ get_header(); ?>
 <!-- begin individual a.sponsor "card" -->
 							<div class="event-wrapper shorter">
 
-								<div class="image-wrapper">
+								<div class="image-wrapper fixed-height">
 
 									<?php if ($sponsor_img_id) { ?>
 						        <img src="<?php echo $img_url ?>" alt="" />

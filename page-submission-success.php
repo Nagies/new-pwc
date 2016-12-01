@@ -13,7 +13,7 @@
 	<section id="section-2", class="full">
 		<div class="success-wrapper">
 			<h1 class="success">SUCCESS!</h1>
-			<img src="/pwc/wp-content/themes/underscores/images/checkmark.png" alt="">
+			<img src="/pwc-underscores/images/checkmark.png" alt="">
 		</div>
 	</section>
 </div>

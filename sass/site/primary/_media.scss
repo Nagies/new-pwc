@@ -299,6 +299,16 @@
 					float: none !important;
 					width: 100% !important;
 					height: 550px !important;
+
+					.membership {
+						.membership-text-wrapper {
+							.buttons {
+								.button {
+									padding: 12px 25px !important;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
